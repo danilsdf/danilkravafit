@@ -28,7 +28,7 @@ export default function UserAvatar() {
     return (
       <Link
         href="/login"
-        className="flex items-center justify-center px-4 py-2 text-xs font-extrabold uppercase tracking-widest border border-white/30 text-white/70 hover:text-white hover:border-white rounded-lg transition"
+        className="whitespace-nowrap flex items-center justify-center px-4 py-2 text-xs font-extrabold uppercase tracking-widest border border-white/30 text-white/70 hover:text-white hover:border-white rounded-lg transition"
       >
         Log in
       </Link>
