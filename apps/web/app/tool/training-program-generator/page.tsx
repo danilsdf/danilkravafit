@@ -1,6 +1,10 @@
-"use client";
+import { Suspense } from "react";
 import TrainingProgramGeneratorPageBody from "@/components/pages/TrainingProgramGenerator/PageBody";
 
 export default function TrainingProgramGeneratorPage() {
-  return <TrainingProgramGeneratorPageBody />;
+  return (
+    <Suspense>
+      <TrainingProgramGeneratorPageBody />
+    </Suspense>
+  );
 }
