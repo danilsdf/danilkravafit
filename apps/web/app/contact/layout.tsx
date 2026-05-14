@@ -8,7 +8,7 @@ export default function MainLayout({
 }) {
   return (
     <>
-      <HomeHeader />
+      <HomeHeader showTraining={false} />
       {children}
       <MainFooter />
     </>

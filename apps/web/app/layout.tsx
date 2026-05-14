@@ -4,8 +4,6 @@ import { Analytics } from "@vercel/analytics/next"
 import Script from "next/script"
 import "./globals.css";
 import type { Metadata } from "next";
-import BuyMeACoffee from "@/components/BuyMeACoffee";
-import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
   title: "Danil Kravchenko | Athlete & Coder",
@@ -41,7 +39,6 @@ export default function RootLayout({
               {children}
             </div>
           </div>
-          <BuyMeACoffee />
       </body>
     </html>
   );

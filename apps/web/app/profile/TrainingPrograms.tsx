@@ -75,7 +75,7 @@ export default function TrainingPrograms({ loading, items, onDelete }: Readonly<
               </div>
               <div className="flex items-center gap-2 shrink-0">
                 <a
-                  href="/tool/training-program-generator"
+                  href={`/profile/programs/${item.id}`}
                   className="text-xs text-white/40 hover:text-white transition border border-white/10 hover:border-white/30 rounded-lg px-3 py-1.5 font-medium"
                 >
                   Open

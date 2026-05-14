@@ -30,7 +30,7 @@ const pillars = [
 export default function HomePage() {
   return (
     <>
-      <HomeHeader />
+      <HomeHeader showTraining={true} />
       <main className="min-h-screen bg-neutral-950 text-white">
         {/* HERO */}
         <section className="relative overflow-hidden border-b border-white/10">

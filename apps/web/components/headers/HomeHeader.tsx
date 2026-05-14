@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import UserAvatar from "@/components/UserAvatar";
 
-export default function HomeHeader({showTraining = true}: Readonly<{showTraining?: boolean}>) {
+export default function HomeHeader({showTraining = false}: Readonly<{showTraining?: boolean}>) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
