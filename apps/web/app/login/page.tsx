@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import GoogleSignInButton from "@/components/GoogleSignInButton";
+import DiscordSignInButton from "@/components/DiscordSignInButton";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -118,6 +120,15 @@ export default function LoginPage() {
           >
             {loading ? "Logging in…" : "Log in"}
           </button>
+
+          <div className="relative flex items-center gap-3 py-1">
+            <div className="h-px flex-1 bg-white/10" />
+            <span className="text-xs text-white/30 uppercase tracking-widest">or</span>
+            <div className="h-px flex-1 bg-white/10" />
+          </div>
+
+          <GoogleSignInButton onError={setError} />
+          <DiscordSignInButton />
         </form>
       </div>
     </main>

@@ -25,7 +25,7 @@ export async function GET() {
       .collection("Users")
       .findOne(
         { _id: new ObjectId(user.userId) },
-        { projection: { fullName: 1, email: 1, role: 1, weight: 1, height: 1, age: 1, gender: 1, goal: 1, dailyCalories: 1, macroSplit: 1, membership: 1 } }
+        { projection: { fullName: 1, email: 1, role: 1, googleId: 1, stravaId: 1, discordId: 1, weight: 1, height: 1, age: 1, gender: 1, goal: 1, dailyCalories: 1, macroSplit: 1, membership: 1 } }
       );
     if (!doc) return NextResponse.json({ error: "User not found." }, { status: 404 });
     return NextResponse.json(doc);

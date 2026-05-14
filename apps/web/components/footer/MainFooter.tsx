@@ -2,9 +2,26 @@ export default function MainFooter() {
   return (
     <footer className="border-t border-white/10 bg-neutral-950 px-5 py-10 text-white md:px-10 lg:px-24">
       <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
-        <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-white/40">
-          Hybrid Athlete Hub · Built for strength &amp; endurance.
-        </p>
+        <div className="flex flex-col items-center gap-2 md:items-start">
+          <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-white/40">
+            Hybrid Athlete Hub · Built for strength &amp; endurance.
+          </p>
+          <div className="flex items-center gap-4">
+            <a
+              href="/privacy-policy"
+              className="text-[10px] font-medium uppercase tracking-widest text-white/30 transition hover:text-white/60"
+            >
+              Privacy Policy
+            </a>
+            <span className="text-white/20">·</span>
+            <a
+              href="/terms-of-service"
+              className="text-[10px] font-medium uppercase tracking-widest text-white/30 transition hover:text-white/60"
+            >
+              Terms of Service
+            </a>
+          </div>
+        </div>
 
         <div className="flex items-center gap-5">
           <a
