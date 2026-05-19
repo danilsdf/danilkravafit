@@ -1,3 +1,4 @@
+"use client";
 export default function FitnessToolsPage() {
   return (
     <div className="mx-auto max-w-5xl px-4 pb-20 pt-24 text-neutral-900 dark:text-neutral-100">
@@ -14,10 +15,10 @@ export default function FitnessToolsPage() {
 
       {/* TOP TOOL CARDS (3 IN A ROW) */}
       <section className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mb-16">
-        <ToolCard title="Meal Prep Helper" href="/tool/meal-prep-helper" imageSrc="/meal-prep-helper-tool.png" />
+        <ToolCard title="Meal Prep Helper" href="/tool/meal-prep-helper" imageSrc="/meal-prep-helper-tool.png" clearLocalStorage />
         <ToolCard title="Calories Calculator" href="/tool/calories-calculator" imageSrc="/calories-calculator-tool.png" />
-        <ToolCard title="Workout Generator" href="/tool/workout-generator" imageSrc="/coming-soon-tool-2.png" />
-        <ToolCard title="Training Program Generator" href="/tool/training-program-generator" imageSrc="/coming-soon-tool-2.png" />
+        {/* <ToolCard title="Workout Generator" href="/tool/workout-generator" imageSrc="/coming-soon-tool-2.png" /> */}
+        <ToolCard title="Training Program Generator" href="/tool/training-program-generator" imageSrc="/training-program-generator-tool.png" />
       </section>
 
       {/* TWO MID-CARDS (BIG) */}
@@ -52,7 +53,14 @@ export default function FitnessToolsPage() {
   );
 }
 
-function ToolCard({ title, href, imageSrc }: { title: string; href?: string; imageSrc?: string }) {
+function ToolCard({ title, href, imageSrc, clearLocalStorage }: { title: string; href?: string; imageSrc?: string; clearLocalStorage?: boolean }) {
+  function handleClick() {
+    if (clearLocalStorage) {
+      localStorage.removeItem('mealPrepSettings');
+      localStorage.removeItem('mealPrepIngredients');
+      localStorage.removeItem('mealPrepStep');
+    }
+  }
   const content = (
     <>
       <img
@@ -64,7 +72,7 @@ function ToolCard({ title, href, imageSrc }: { title: string; href?: string; ima
     </>
   );
   return href ? (
-    <a href={href} className="rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800 p-4 cursor-pointer transition hover:bg-neutral-100 dark:hover:bg-neutral-900 block focus:outline-none focus:ring-2 focus:ring-yellow-600 dark:focus:ring-yellow-400">
+    <a href={href} onClick={handleClick} className="rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800 p-4 cursor-pointer transition hover:bg-neutral-100 dark:hover:bg-neutral-900 block focus:outline-none focus:ring-2 focus:ring-yellow-600 dark:focus:ring-yellow-400">
       {content}
     </a>
   ) : (

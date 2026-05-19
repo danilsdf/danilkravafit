@@ -26,8 +26,9 @@ type Program = {
   slug: string;
   title: string;
   description: string;
-  startDate: string;
-  endDate: string;
+  startDate?: string;
+  isCurrent?: boolean;
+  endDate?: string;
   duration: string;
   totalKm: string;
   goal: string;
@@ -35,41 +36,56 @@ type Program = {
   weeks: Week[];
 };
 
-const program = programsData[0] as Program;
-const WEEKS = program.weeks;
+const PROGRAMS = programsData as Program[];
 
-function getCurrentWeekIndex(todayIso: string): number {
-  for (let i = 0; i < WEEKS.length; i++) {
-    const days = WEEKS[i].days;
+function findCurrentProgram(todayIso: string): Program {
+  for (const prog of PROGRAMS) {
+    for (const week of prog.weeks) {
+      const days = week.days;
+      if (!days || days.length === 0) continue;
+      const first = days[0].iso;
+      const last = days.at(-1)!.iso;
+      if (todayIso >= first && todayIso <= last) return prog;
+    }
+  }
+  return PROGRAMS.find(prog => prog.isCurrent) ?? PROGRAMS[0];
+}
+
+function getCurrentWeekIndex(weeks: Week[], todayIso: string): number {
+  for (let i = 0; i < weeks.length; i++) {
+    const days = weeks[i].days;
     if (!days) continue;
     const first = days[0].iso;
     const last = days.at(-1)!.iso;
     if (todayIso >= first && todayIso <= last) return i;
   }
-  if (todayIso < (WEEKS[0].days?.[0].iso ?? "")) return 0;
-  return WEEKS.length - 1;
+  if (todayIso < (weeks[0].days?.[0].iso ?? "")) return 0;
+  return weeks.length - 1;
 }
 
-function isProgramPast(todayIso: string): boolean {
-  const lastWeek = WEEKS.at(-1)!;
-  const lastDay = lastWeek.days?.at(-1)?.iso ?? program.endDate;
+function isProgramPast(prog: Program, todayIso: string): boolean {
+  const lastWeek = prog.weeks.at(-1)!;
+  const lastDay = lastWeek.days?.at(-1)?.iso ?? prog.endDate ?? "";
   return todayIso > lastDay;
 }
 
 export default function TrainingPage() {
   const [todayIso, setTodayIso] = useState("");
+  const [program, setProgram] = useState<Program>(PROGRAMS[0]);
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const iso = new Date().toISOString().split("T")[0];
     setTodayIso(iso);
-    setActiveIndex(getCurrentWeekIndex(iso));
+    const current = findCurrentProgram(iso);
+    setProgram(current);
+    setActiveIndex(getCurrentWeekIndex(current.weeks, iso));
   }, []);
 
-  const activeWeek = WEEKS[activeIndex];
+  const activeWeek = program.weeks[activeIndex];
   const isCurrentWeek =
-    todayIso !== "" && activeIndex === getCurrentWeekIndex(todayIso);
-  const isPast = todayIso !== "" && isProgramPast(todayIso);
+    todayIso !== "" && activeIndex === getCurrentWeekIndex(program.weeks, todayIso);
+  const isPast = todayIso !== "" && isProgramPast(program, todayIso);
 
   return (
     <main className="min-h-screen bg-neutral-950 text-white">
@@ -122,10 +138,10 @@ export default function TrainingPage() {
         {/* SIDEBAR — horizontal scroll on mobile, sticky sidebar on lg */}
         <aside className="lg:sticky lg:top-24 lg:h-fit">
           <div className="grid grid-cols-3 sm:grid-cols-4 gap-2 lg:flex lg:flex-col lg:overflow-visible lg:rounded-xl lg:border lg:border-white/10 lg:bg-white/[0.03] lg:p-3 lg:pb-3">
-            {WEEKS.map((week, index) => {
+            {program.weeks.map((week, index) => {
               const isActive = index === activeIndex;
               const isCurrent =
-                todayIso !== "" && index === getCurrentWeekIndex(todayIso);
+                todayIso !== "" && index === getCurrentWeekIndex(program.weeks, todayIso);
               return (
                 <button
                   key={week.title}

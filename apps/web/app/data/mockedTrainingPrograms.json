@@ -132,5 +132,1330 @@
         ]
       }
     ]
+  },
+  {
+    "slug": "hybrid-month-split",
+    "title": "Hybrid Month Split",
+    "description": "4-week hybrid block: 3 gym sessions and 3 runs per week. Build strength and aerobic base simultaneously.",
+    "duration": "4 weeks",
+    "totalKm": "~96 km",
+    "goal": "Hybrid fitness",
+    "tags": ["running", "gain weight"],
+    "weeks": [
+      {
+        "id": 1,
+        "title": "Week 1",
+        "subtitle": "Foundation",
+        "volume": "~24 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-01", "dateLabel": "Jun 1",  "training": "Upper body (chest + back)",   "run": "—" },
+          { "day": "Tue", "iso": "2026-06-02", "dateLabel": "Jun 2",  "training": "Easy run 8 km",               "run": "8" },
+          { "day": "Wed", "iso": "2026-06-03", "dateLabel": "Jun 3",  "training": "Lower body (legs)",           "run": "—" },
+          { "day": "Thu", "iso": "2026-06-04", "dateLabel": "Jun 4",  "training": "Tempo run 8 km",              "run": "8" },
+          { "day": "Fri", "iso": "2026-06-05", "dateLabel": "Jun 5",  "training": "Push (shoulders + chest)",    "run": "—" },
+          { "day": "Sat", "iso": "2026-06-06", "dateLabel": "Jun 6",  "training": "Long run 8 km easy",          "run": "8", "bold": true },
+          { "day": "Sun", "iso": "2026-06-07", "dateLabel": "Jun 7",  "training": "Rest / mobility",             "run": "—" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Week 2",
+        "subtitle": "Build",
+        "volume": "~24 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-08", "dateLabel": "Jun 8",  "training": "Upper body (chest + back)",   "run": "—" },
+          { "day": "Tue", "iso": "2026-06-09", "dateLabel": "Jun 9",  "training": "Easy run 8 km",               "run": "8" },
+          { "day": "Wed", "iso": "2026-06-10", "dateLabel": "Jun 10", "training": "Lower body (legs)",           "run": "—" },
+          { "day": "Thu", "iso": "2026-06-11", "dateLabel": "Jun 11", "training": "Interval run 8 km",           "run": "8" },
+          { "day": "Fri", "iso": "2026-06-12", "dateLabel": "Jun 12", "training": "Push (shoulders + chest)",    "run": "—" },
+          { "day": "Sat", "iso": "2026-06-13", "dateLabel": "Jun 13", "training": "Long run 8 km easy",          "run": "8", "bold": true },
+          { "day": "Sun", "iso": "2026-06-14", "dateLabel": "Jun 14", "training": "Rest / mobility",             "run": "—" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Week 3",
+        "subtitle": "Overload",
+        "volume": "~24 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-15", "dateLabel": "Jun 15", "training": "Upper body (chest + back)",   "run": "—" },
+          { "day": "Tue", "iso": "2026-06-16", "dateLabel": "Jun 16", "training": "Easy run 8 km",               "run": "8" },
+          { "day": "Wed", "iso": "2026-06-17", "dateLabel": "Jun 17", "training": "Lower body (legs)",           "run": "—" },
+          { "day": "Thu", "iso": "2026-06-18", "dateLabel": "Jun 18", "training": "Tempo run 8 km",              "run": "8" },
+          { "day": "Fri", "iso": "2026-06-19", "dateLabel": "Jun 19", "training": "Full body strength",          "run": "—" },
+          { "day": "Sat", "iso": "2026-06-20", "dateLabel": "Jun 20", "training": "Long run 8 km easy",          "run": "8", "bold": true },
+          { "day": "Sun", "iso": "2026-06-21", "dateLabel": "Jun 21", "training": "Rest / mobility",             "run": "—" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Week 4",
+        "subtitle": "Deload",
+        "volume": "~24 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-22", "dateLabel": "Jun 22", "training": "Upper body — reduced volume", "run": "—" },
+          { "day": "Tue", "iso": "2026-06-23", "dateLabel": "Jun 23", "training": "Easy run 8 km",               "run": "8" },
+          { "day": "Wed", "iso": "2026-06-24", "dateLabel": "Jun 24", "training": "Lower body — reduced volume", "run": "—" },
+          { "day": "Thu", "iso": "2026-06-25", "dateLabel": "Jun 25", "training": "Easy aerobic run 8 km",       "run": "8" },
+          { "day": "Fri", "iso": "2026-06-26", "dateLabel": "Jun 26", "training": "Light full body",             "run": "—" },
+          { "day": "Sat", "iso": "2026-06-27", "dateLabel": "Jun 27", "training": "Long run 8 km easy",          "run": "8", "bold": true },
+          { "day": "Sun", "iso": "2026-06-28", "dateLabel": "Jun 28", "training": "Rest",                        "run": "—" }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "fat-loss-6-weeks",
+    "title": "Fat Loss 6 Weeks",
+    "description": "6-week fat loss program: 3 gym sessions and 3 treadmill sessions per week. High-intensity work to maximize calorie burn.",
+    "duration": "6 weeks",
+    "totalKm": "~120 km",
+    "goal": "Fat loss",
+    "tags": ["fat loss"],
+    "weeks": [
+      {
+        "id": 1,
+        "title": "Week 1",
+        "subtitle": "Activation",
+        "volume": "~20 km treadmill",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-01", "dateLabel": "Jun 1",  "training": "Full body gym — compound lifts",        "run": "—" },
+          { "day": "Tue", "iso": "2026-06-02", "dateLabel": "Jun 2",  "training": "Treadmill HIIT 40 min (~6 km)",         "run": "6" },
+          { "day": "Wed", "iso": "2026-06-03", "dateLabel": "Jun 3",  "training": "Upper body gym + core",                 "run": "—" },
+          { "day": "Thu", "iso": "2026-06-04", "dateLabel": "Jun 4",  "training": "Treadmill steady state 45 min (~7 km)", "run": "7" },
+          { "day": "Fri", "iso": "2026-06-05", "dateLabel": "Jun 5",  "training": "Lower body gym — glutes + hamstrings",  "run": "—" },
+          { "day": "Sat", "iso": "2026-06-06", "dateLabel": "Jun 6",  "training": "Treadmill incline walk/run 50 min",     "run": "7", "bold": true },
+          { "day": "Sun", "iso": "2026-06-07", "dateLabel": "Jun 7",  "training": "Rest",                                  "run": "—" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Week 2",
+        "subtitle": "Intensity Up",
+        "volume": "~21 km treadmill",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-08", "dateLabel": "Jun 8",  "training": "Full body gym — compound lifts",        "run": "—" },
+          { "day": "Tue", "iso": "2026-06-09", "dateLabel": "Jun 9",  "training": "Treadmill HIIT 45 min (~7 km)",         "run": "7" },
+          { "day": "Wed", "iso": "2026-06-10", "dateLabel": "Jun 10", "training": "Upper body gym + core",                 "run": "—" },
+          { "day": "Thu", "iso": "2026-06-11", "dateLabel": "Jun 11", "training": "Treadmill steady state 45 min (~7 km)", "run": "7" },
+          { "day": "Fri", "iso": "2026-06-12", "dateLabel": "Jun 12", "training": "Lower body gym — glutes + hamstrings",  "run": "—" },
+          { "day": "Sat", "iso": "2026-06-13", "dateLabel": "Jun 13", "training": "Treadmill incline 50 min (~7 km)",      "run": "7", "bold": true },
+          { "day": "Sun", "iso": "2026-06-14", "dateLabel": "Jun 14", "training": "Rest",                                  "run": "—" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Week 3",
+        "subtitle": "Peak Burn",
+        "volume": "~21 km treadmill",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-15", "dateLabel": "Jun 15", "training": "Full body gym + superset circuits",     "run": "—" },
+          { "day": "Tue", "iso": "2026-06-16", "dateLabel": "Jun 16", "training": "Treadmill HIIT 45 min (~7 km)",         "run": "7" },
+          { "day": "Wed", "iso": "2026-06-17", "dateLabel": "Jun 17", "training": "Upper body gym + core",                 "run": "—" },
+          { "day": "Thu", "iso": "2026-06-18", "dateLabel": "Jun 18", "training": "Treadmill steady state 50 min (~7 km)", "run": "7" },
+          { "day": "Fri", "iso": "2026-06-19", "dateLabel": "Jun 19", "training": "Lower body gym",                        "run": "—" },
+          { "day": "Sat", "iso": "2026-06-20", "dateLabel": "Jun 20", "training": "Treadmill intervals 50 min (~7 km)",    "run": "7", "bold": true },
+          { "day": "Sun", "iso": "2026-06-21", "dateLabel": "Jun 21", "training": "Rest",                                  "run": "—" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Week 4",
+        "subtitle": "Maintain",
+        "volume": "~20 km treadmill",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-22", "dateLabel": "Jun 22", "training": "Full body gym",                         "run": "—" },
+          { "day": "Tue", "iso": "2026-06-23", "dateLabel": "Jun 23", "training": "Treadmill HIIT 40 min (~6 km)",         "run": "6" },
+          { "day": "Wed", "iso": "2026-06-24", "dateLabel": "Jun 24", "training": "Upper body gym + core",                 "run": "—" },
+          { "day": "Thu", "iso": "2026-06-25", "dateLabel": "Jun 25", "training": "Treadmill steady state (~7 km)",        "run": "7" },
+          { "day": "Fri", "iso": "2026-06-26", "dateLabel": "Jun 26", "training": "Lower body gym",                        "run": "—" },
+          { "day": "Sat", "iso": "2026-06-27", "dateLabel": "Jun 27", "training": "Treadmill incline walk/run (~7 km)",    "run": "7", "bold": true },
+          { "day": "Sun", "iso": "2026-06-28", "dateLabel": "Jun 28", "training": "Rest",                                  "run": "—" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Week 5",
+        "subtitle": "Final Push",
+        "volume": "~21 km treadmill",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-29", "dateLabel": "Jun 29", "training": "Full body gym + supersets",             "run": "—" },
+          { "day": "Tue", "iso": "2026-06-30", "dateLabel": "Jun 30", "training": "Treadmill HIIT 45 min (~7 km)",         "run": "7" },
+          { "day": "Wed", "iso": "2026-07-01", "dateLabel": "Jul 1",  "training": "Upper body gym + core",                 "run": "—" },
+          { "day": "Thu", "iso": "2026-07-02", "dateLabel": "Jul 2",  "training": "Treadmill steady state (~7 km)",        "run": "7" },
+          { "day": "Fri", "iso": "2026-07-03", "dateLabel": "Jul 3",  "training": "Lower body gym",                        "run": "—" },
+          { "day": "Sat", "iso": "2026-07-04", "dateLabel": "Jul 4",  "training": "Treadmill intervals (~7 km)",           "run": "7", "bold": true },
+          { "day": "Sun", "iso": "2026-07-05", "dateLabel": "Jul 5",  "training": "Rest",                                  "run": "—" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Week 6",
+        "subtitle": "Deload",
+        "volume": "~17 km treadmill",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-06", "dateLabel": "Jul 6",  "training": "Light full body gym",                   "run": "—" },
+          { "day": "Tue", "iso": "2026-07-07", "dateLabel": "Jul 7",  "training": "Easy treadmill 30 min (~5 km)",         "run": "5" },
+          { "day": "Wed", "iso": "2026-07-08", "dateLabel": "Jul 8",  "training": "Upper body — reduced volume",           "run": "—" },
+          { "day": "Thu", "iso": "2026-07-09", "dateLabel": "Jul 9",  "training": "Treadmill easy 40 min (~6 km)",         "run": "6" },
+          { "day": "Fri", "iso": "2026-07-10", "dateLabel": "Jul 10", "training": "Light lower body",                      "run": "—" },
+          { "day": "Sat", "iso": "2026-07-11", "dateLabel": "Jul 11", "training": "Easy treadmill 40 min (~6 km)",         "run": "6", "bold": true },
+          { "day": "Sun", "iso": "2026-07-12", "dateLabel": "Jul 12", "training": "Rest",                                  "run": "—" }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "marathon-10-week",
+    "title": "Marathon 10-Week Split",
+    "description": "10-week focused marathon training block. Pure running plan targeting sub-3:30 finish with progressive long run build-up.",
+    "duration": "10 weeks",
+    "totalKm": "~600 km",
+    "goal": "Sub 3:30",
+    "tags": ["marathon", "running"],
+    "weeks": [
+      {
+        "id": 1,
+        "title": "Week 1",
+        "subtitle": "Easy Base",
+        "volume": "~48 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-01", "dateLabel": "Jun 1",  "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-06-02", "dateLabel": "Jun 2",  "training": "Easy run 8 km",                  "run": "8" },
+          { "day": "Wed", "iso": "2026-06-03", "dateLabel": "Jun 3",  "training": "Aerobic 10 km",                  "run": "10" },
+          { "day": "Thu", "iso": "2026-06-04", "dateLabel": "Jun 4",  "training": "Recovery 6 km",                  "run": "6" },
+          { "day": "Fri", "iso": "2026-06-05", "dateLabel": "Jun 5",  "training": "Tempo 8 km",                     "run": "8" },
+          { "day": "Sat", "iso": "2026-06-06", "dateLabel": "Jun 6",  "training": "Long run 16 km easy",            "run": "16", "bold": true },
+          { "day": "Sun", "iso": "2026-06-07", "dateLabel": "Jun 7",  "training": "Rest or easy walk",              "run": "—" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Week 2",
+        "subtitle": "Aerobic Build",
+        "volume": "~53 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-08", "dateLabel": "Jun 8",  "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-06-09", "dateLabel": "Jun 9",  "training": "Easy run 9 km",                  "run": "9" },
+          { "day": "Wed", "iso": "2026-06-10", "dateLabel": "Jun 10", "training": "Aerobic 11 km",                  "run": "11" },
+          { "day": "Thu", "iso": "2026-06-11", "dateLabel": "Jun 11", "training": "Recovery 6 km",                  "run": "6" },
+          { "day": "Fri", "iso": "2026-06-12", "dateLabel": "Jun 12", "training": "Threshold 9 km",                 "run": "9" },
+          { "day": "Sat", "iso": "2026-06-13", "dateLabel": "Jun 13", "training": "Long run 18 km easy",            "run": "18", "bold": true },
+          { "day": "Sun", "iso": "2026-06-14", "dateLabel": "Jun 14", "training": "Rest",                           "run": "—" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Week 3",
+        "subtitle": "Progression",
+        "volume": "~58 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-15", "dateLabel": "Jun 15", "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-06-16", "dateLabel": "Jun 16", "training": "Easy run 10 km",                 "run": "10" },
+          { "day": "Wed", "iso": "2026-06-17", "dateLabel": "Jun 17", "training": "Aerobic 12 km",                  "run": "12" },
+          { "day": "Thu", "iso": "2026-06-18", "dateLabel": "Jun 18", "training": "Recovery 6 km",                  "run": "6" },
+          { "day": "Fri", "iso": "2026-06-19", "dateLabel": "Jun 19", "training": "Tempo 10 km",                    "run": "10" },
+          { "day": "Sat", "iso": "2026-06-20", "dateLabel": "Jun 20", "training": "Long run 20 km easy",            "run": "20", "bold": true },
+          { "day": "Sun", "iso": "2026-06-21", "dateLabel": "Jun 21", "training": "Rest",                           "run": "—" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Week 4",
+        "subtitle": "Deload",
+        "volume": "~45 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-22", "dateLabel": "Jun 22", "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-06-23", "dateLabel": "Jun 23", "training": "Easy run 8 km",                  "run": "8" },
+          { "day": "Wed", "iso": "2026-06-24", "dateLabel": "Jun 24", "training": "Aerobic 10 km",                  "run": "10" },
+          { "day": "Thu", "iso": "2026-06-25", "dateLabel": "Jun 25", "training": "Recovery 5 km",                  "run": "5" },
+          { "day": "Fri", "iso": "2026-06-26", "dateLabel": "Jun 26", "training": "Easy 8 km",                      "run": "8" },
+          { "day": "Sat", "iso": "2026-06-27", "dateLabel": "Jun 27", "training": "Long run 14 km easy",            "run": "14", "bold": true },
+          { "day": "Sun", "iso": "2026-06-28", "dateLabel": "Jun 28", "training": "Rest",                           "run": "—" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Week 5",
+        "subtitle": "Lactate Work",
+        "volume": "~60 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-29", "dateLabel": "Jun 29", "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-06-30", "dateLabel": "Jun 30", "training": "Easy run 10 km",                 "run": "10" },
+          { "day": "Wed", "iso": "2026-07-01", "dateLabel": "Jul 1",  "training": "Intervals 12 km",               "run": "12" },
+          { "day": "Thu", "iso": "2026-07-02", "dateLabel": "Jul 2",  "training": "Recovery 6 km",                  "run": "6" },
+          { "day": "Fri", "iso": "2026-07-03", "dateLabel": "Jul 3",  "training": "Tempo 10 km",                    "run": "10" },
+          { "day": "Sat", "iso": "2026-07-04", "dateLabel": "Jul 4",  "training": "Long run 22 km easy",            "run": "22", "bold": true },
+          { "day": "Sun", "iso": "2026-07-05", "dateLabel": "Jul 5",  "training": "Rest",                           "run": "—" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Week 6",
+        "subtitle": "MP Pace Work",
+        "volume": "~64 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-06", "dateLabel": "Jul 6",  "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-07-07", "dateLabel": "Jul 7",  "training": "Easy run 11 km",                 "run": "11" },
+          { "day": "Wed", "iso": "2026-07-08", "dateLabel": "Jul 8",  "training": "Aerobic 12 km",                  "run": "12" },
+          { "day": "Thu", "iso": "2026-07-09", "dateLabel": "Jul 9",  "training": "Recovery 7 km",                  "run": "7" },
+          { "day": "Fri", "iso": "2026-07-10", "dateLabel": "Jul 10", "training": "Tempo 10 km (last 5 @ MP)",      "run": "10" },
+          { "day": "Sat", "iso": "2026-07-11", "dateLabel": "Jul 11", "training": "Long run 24 km",                 "run": "24", "bold": true },
+          { "day": "Sun", "iso": "2026-07-12", "dateLabel": "Jul 12", "training": "Rest",                           "run": "—" }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Week 7",
+        "subtitle": "Peak Volume",
+        "volume": "~72 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-13", "dateLabel": "Jul 13", "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-07-14", "dateLabel": "Jul 14", "training": "Easy run 12 km",                 "run": "12" },
+          { "day": "Wed", "iso": "2026-07-15", "dateLabel": "Jul 15", "training": "Threshold 13 km",               "run": "13" },
+          { "day": "Thu", "iso": "2026-07-16", "dateLabel": "Jul 16", "training": "Recovery 7 km",                  "run": "7" },
+          { "day": "Fri", "iso": "2026-07-17", "dateLabel": "Jul 17", "training": "MP run 12 km",                   "run": "12" },
+          { "day": "Sat", "iso": "2026-07-18", "dateLabel": "Jul 18", "training": "Long run 28 km",                 "run": "28", "bold": true },
+          { "day": "Sun", "iso": "2026-07-19", "dateLabel": "Jul 19", "training": "Rest",                           "run": "—" }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Week 8",
+        "subtitle": "Consolidate",
+        "volume": "~64 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-20", "dateLabel": "Jul 20", "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-07-21", "dateLabel": "Jul 21", "training": "Easy run 11 km",                 "run": "11" },
+          { "day": "Wed", "iso": "2026-07-22", "dateLabel": "Jul 22", "training": "Intervals 12 km",               "run": "12" },
+          { "day": "Thu", "iso": "2026-07-23", "dateLabel": "Jul 23", "training": "Recovery 7 km",                  "run": "7" },
+          { "day": "Fri", "iso": "2026-07-24", "dateLabel": "Jul 24", "training": "MP tempo 10 km",                 "run": "10" },
+          { "day": "Sat", "iso": "2026-07-25", "dateLabel": "Jul 25", "training": "Long run 24 km",                 "run": "24", "bold": true },
+          { "day": "Sun", "iso": "2026-07-26", "dateLabel": "Jul 26", "training": "Rest",                           "run": "—" }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Week 9",
+        "subtitle": "Taper",
+        "volume": "~48 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-27", "dateLabel": "Jul 27", "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-07-28", "dateLabel": "Jul 28", "training": "Easy run 10 km",                 "run": "10" },
+          { "day": "Wed", "iso": "2026-07-29", "dateLabel": "Jul 29", "training": "Easy 10 km",                     "run": "10" },
+          { "day": "Thu", "iso": "2026-07-30", "dateLabel": "Jul 30", "training": "Recovery 6 km",                  "run": "6" },
+          { "day": "Fri", "iso": "2026-07-31", "dateLabel": "Jul 31", "training": "Shakeout 6 km",                  "run": "6" },
+          { "day": "Sat", "iso": "2026-08-01", "dateLabel": "Aug 1",  "training": "Long run 16 km",                 "run": "16", "bold": true },
+          { "day": "Sun", "iso": "2026-08-02", "dateLabel": "Aug 2",  "training": "Rest",                           "run": "—" }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Race Week",
+        "subtitle": "Marathon",
+        "volume": "42 km race",
+        "days": [
+          { "day": "Mon", "iso": "2026-08-03", "dateLabel": "Aug 3",  "training": "Easy 8 km",                      "run": "8" },
+          { "day": "Tue", "iso": "2026-08-04", "dateLabel": "Aug 4",  "training": "Shakeout 6 km (2 @ MP)",         "run": "6" },
+          { "day": "Wed", "iso": "2026-08-05", "dateLabel": "Aug 5",  "training": "Easy 5 km",                      "run": "5" },
+          { "day": "Thu", "iso": "2026-08-06", "dateLabel": "Aug 6",  "training": "Rest",                           "run": "—" },
+          { "day": "Fri", "iso": "2026-08-07", "dateLabel": "Aug 7",  "training": "Shakeout 4 km",                  "run": "4" },
+          { "day": "Sat", "iso": "2026-08-08", "dateLabel": "Aug 8",  "training": "Rest",                           "run": "—" },
+          { "day": "Sun", "iso": "2026-08-09", "dateLabel": "Aug 9",  "training": "MARATHON — Goal 3:30",           "run": "42", "bold": true }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "fat-loss-9-weeks",
+    "title": "Fat Loss 9 Weeks",
+    "description": "9-week structured fat loss plan: 2 gym sessions, 3 treadmill sessions, and 1 active recovery day per week. Sustainable, effective, and science-backed.",
+    "duration": "9 weeks",
+    "totalKm": "~189 km",
+    "goal": "Fat loss",
+    "tags": ["fat loss"],
+    "weeks": [
+      {
+        "id": 1,
+        "title": "Week 1",
+        "subtitle": "Kickoff",
+        "volume": "~21 km treadmill",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-01", "dateLabel": "Jun 1",  "training": "Full body gym — compound lifts",      "run": "—" },
+          { "day": "Tue", "iso": "2026-06-02", "dateLabel": "Jun 2",  "training": "Treadmill HIIT 40 min (~6 km)",       "run": "6" },
+          { "day": "Wed", "iso": "2026-06-03", "dateLabel": "Jun 3",  "training": "Active recovery — brisk walk 5 km",   "run": "5" },
+          { "day": "Thu", "iso": "2026-06-04", "dateLabel": "Jun 4",  "training": "Treadmill steady state (~7 km)",       "run": "7" },
+          { "day": "Fri", "iso": "2026-06-05", "dateLabel": "Jun 5",  "training": "Upper/lower gym — strength focus",    "run": "—" },
+          { "day": "Sat", "iso": "2026-06-06", "dateLabel": "Jun 6",  "training": "Treadmill long effort 50 min (~8 km)","run": "8", "bold": true },
+          { "day": "Sun", "iso": "2026-06-07", "dateLabel": "Jun 7",  "training": "Rest",                                "run": "—" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Week 2",
+        "subtitle": "Fat Burn Build",
+        "volume": "~21 km treadmill",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-08", "dateLabel": "Jun 8",  "training": "Full body gym",                       "run": "—" },
+          { "day": "Tue", "iso": "2026-06-09", "dateLabel": "Jun 9",  "training": "Treadmill HIIT 45 min (~7 km)",       "run": "7" },
+          { "day": "Wed", "iso": "2026-06-10", "dateLabel": "Jun 10", "training": "Active recovery — yoga or walk 5 km", "run": "5" },
+          { "day": "Thu", "iso": "2026-06-11", "dateLabel": "Jun 11", "training": "Treadmill steady state (~7 km)",       "run": "7" },
+          { "day": "Fri", "iso": "2026-06-12", "dateLabel": "Jun 12", "training": "Upper/lower gym",                     "run": "—" },
+          { "day": "Sat", "iso": "2026-06-13", "dateLabel": "Jun 13", "training": "Treadmill long effort (~7 km)",        "run": "7", "bold": true },
+          { "day": "Sun", "iso": "2026-06-14", "dateLabel": "Jun 14", "training": "Rest",                                "run": "—" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Week 3",
+        "subtitle": "Intensity Spike",
+        "volume": "~22 km treadmill",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-15", "dateLabel": "Jun 15", "training": "Full body gym + supersets",           "run": "—" },
+          { "day": "Tue", "iso": "2026-06-16", "dateLabel": "Jun 16", "training": "Treadmill intervals 45 min (~7 km)",  "run": "7" },
+          { "day": "Wed", "iso": "2026-06-17", "dateLabel": "Jun 17", "training": "Active recovery — stretch + walk",    "run": "5" },
+          { "day": "Thu", "iso": "2026-06-18", "dateLabel": "Jun 18", "training": "Treadmill incline steady (~7 km)",    "run": "7" },
+          { "day": "Fri", "iso": "2026-06-19", "dateLabel": "Jun 19", "training": "Upper/lower gym + core",              "run": "—" },
+          { "day": "Sat", "iso": "2026-06-20", "dateLabel": "Jun 20", "training": "Treadmill long effort (~8 km)",        "run": "8", "bold": true },
+          { "day": "Sun", "iso": "2026-06-21", "dateLabel": "Jun 21", "training": "Rest",                                "run": "—" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Week 4",
+        "subtitle": "Deload",
+        "volume": "~18 km treadmill",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-22", "dateLabel": "Jun 22", "training": "Light full body gym",                 "run": "—" },
+          { "day": "Tue", "iso": "2026-06-23", "dateLabel": "Jun 23", "training": "Easy treadmill 30 min (~5 km)",       "run": "5" },
+          { "day": "Wed", "iso": "2026-06-24", "dateLabel": "Jun 24", "training": "Active recovery — walk",              "run": "5" },
+          { "day": "Thu", "iso": "2026-06-25", "dateLabel": "Jun 25", "training": "Easy treadmill 35 min (~6 km)",       "run": "6" },
+          { "day": "Fri", "iso": "2026-06-26", "dateLabel": "Jun 26", "training": "Light gym session",                   "run": "—" },
+          { "day": "Sat", "iso": "2026-06-27", "dateLabel": "Jun 27", "training": "Easy treadmill 40 min (~7 km)",       "run": "7", "bold": true },
+          { "day": "Sun", "iso": "2026-06-28", "dateLabel": "Jun 28", "training": "Rest",                                "run": "—" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Week 5",
+        "subtitle": "Reload",
+        "volume": "~22 km treadmill",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-29", "dateLabel": "Jun 29", "training": "Full body gym",                       "run": "—" },
+          { "day": "Tue", "iso": "2026-06-30", "dateLabel": "Jun 30", "training": "Treadmill HIIT 45 min (~7 km)",       "run": "7" },
+          { "day": "Wed", "iso": "2026-07-01", "dateLabel": "Jul 1",  "training": "Active recovery — light walk",        "run": "5" },
+          { "day": "Thu", "iso": "2026-07-02", "dateLabel": "Jul 2",  "training": "Treadmill steady (~7 km)",            "run": "7" },
+          { "day": "Fri", "iso": "2026-07-03", "dateLabel": "Jul 3",  "training": "Upper/lower gym",                     "run": "—" },
+          { "day": "Sat", "iso": "2026-07-04", "dateLabel": "Jul 4",  "training": "Treadmill long effort (~8 km)",        "run": "8", "bold": true },
+          { "day": "Sun", "iso": "2026-07-05", "dateLabel": "Jul 5",  "training": "Rest",                                "run": "—" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Week 6",
+        "subtitle": "Burn Phase",
+        "volume": "~22 km treadmill",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-06", "dateLabel": "Jul 6",  "training": "Full body gym + supersets",           "run": "—" },
+          { "day": "Tue", "iso": "2026-07-07", "dateLabel": "Jul 7",  "training": "Treadmill HIIT 45 min (~7 km)",       "run": "7" },
+          { "day": "Wed", "iso": "2026-07-08", "dateLabel": "Jul 8",  "training": "Active recovery — walk + stretch",    "run": "5" },
+          { "day": "Thu", "iso": "2026-07-09", "dateLabel": "Jul 9",  "training": "Treadmill incline run (~7 km)",        "run": "7" },
+          { "day": "Fri", "iso": "2026-07-10", "dateLabel": "Jul 10", "training": "Upper/lower gym + core",              "run": "—" },
+          { "day": "Sat", "iso": "2026-07-11", "dateLabel": "Jul 11", "training": "Treadmill long effort (~8 km)",        "run": "8", "bold": true },
+          { "day": "Sun", "iso": "2026-07-12", "dateLabel": "Jul 12", "training": "Rest",                                "run": "—" }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Week 7",
+        "subtitle": "Peak Deficit",
+        "volume": "~22 km treadmill",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-13", "dateLabel": "Jul 13", "training": "Full body gym",                       "run": "—" },
+          { "day": "Tue", "iso": "2026-07-14", "dateLabel": "Jul 14", "training": "Treadmill intervals 50 min (~8 km)",  "run": "8" },
+          { "day": "Wed", "iso": "2026-07-15", "dateLabel": "Jul 15", "training": "Active recovery — walk 5 km",         "run": "5" },
+          { "day": "Thu", "iso": "2026-07-16", "dateLabel": "Jul 16", "training": "Treadmill steady (~7 km)",            "run": "7" },
+          { "day": "Fri", "iso": "2026-07-17", "dateLabel": "Jul 17", "training": "Upper/lower gym",                     "run": "—" },
+          { "day": "Sat", "iso": "2026-07-18", "dateLabel": "Jul 18", "training": "Treadmill long run (~7 km)",           "run": "7", "bold": true },
+          { "day": "Sun", "iso": "2026-07-19", "dateLabel": "Jul 19", "training": "Rest",                                "run": "—" }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Week 8",
+        "subtitle": "Final Burn",
+        "volume": "~22 km treadmill",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-20", "dateLabel": "Jul 20", "training": "Full body gym + supersets",           "run": "—" },
+          { "day": "Tue", "iso": "2026-07-21", "dateLabel": "Jul 21", "training": "Treadmill HIIT 50 min (~8 km)",       "run": "8" },
+          { "day": "Wed", "iso": "2026-07-22", "dateLabel": "Jul 22", "training": "Active recovery — yoga / walk",       "run": "5" },
+          { "day": "Thu", "iso": "2026-07-23", "dateLabel": "Jul 23", "training": "Treadmill steady (~7 km)",            "run": "7" },
+          { "day": "Fri", "iso": "2026-07-24", "dateLabel": "Jul 24", "training": "Upper/lower gym",                     "run": "—" },
+          { "day": "Sat", "iso": "2026-07-25", "dateLabel": "Jul 25", "training": "Treadmill long effort (~7 km)",        "run": "7", "bold": true },
+          { "day": "Sun", "iso": "2026-07-26", "dateLabel": "Jul 26", "training": "Rest",                                "run": "—" }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Week 9",
+        "subtitle": "Wrap-Up",
+        "volume": "~18 km treadmill",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-27", "dateLabel": "Jul 27", "training": "Light full body gym",                 "run": "—" },
+          { "day": "Tue", "iso": "2026-07-28", "dateLabel": "Jul 28", "training": "Easy treadmill 30 min (~5 km)",       "run": "5" },
+          { "day": "Wed", "iso": "2026-07-29", "dateLabel": "Jul 29", "training": "Active recovery — walk",              "run": "5" },
+          { "day": "Thu", "iso": "2026-07-30", "dateLabel": "Jul 30", "training": "Easy treadmill 35 min (~6 km)",       "run": "6" },
+          { "day": "Fri", "iso": "2026-07-31", "dateLabel": "Jul 31", "training": "Light gym session",                   "run": "—" },
+          { "day": "Sat", "iso": "2026-08-01", "dateLabel": "Aug 1",  "training": "Easy treadmill 40 min (~7 km)",       "run": "7", "bold": true },
+          { "day": "Sun", "iso": "2026-08-02", "dateLabel": "Aug 2",  "training": "Rest",                                "run": "—" }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "bulk-12-weeks",
+    "title": "Bulk Program 12 Weeks",
+    "description": "12-week muscle-building program. Progressive overload with 4-day gym split designed to maximize lean mass gains.",
+    "duration": "12 weeks",
+    "totalKm": "—",
+    "goal": "Gain muscle mass",
+    "tags": ["gain weight"],
+    "weeks": [
+      {
+        "id": 1,
+        "title": "Week 1",
+        "subtitle": "Foundation",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-01", "dateLabel": "Jun 1",  "training": "Chest + Triceps",              "run": "—" },
+          { "day": "Tue", "iso": "2026-06-02", "dateLabel": "Jun 2",  "training": "Back + Biceps",                "run": "—" },
+          { "day": "Wed", "iso": "2026-06-03", "dateLabel": "Jun 3",  "training": "Rest / light cardio",          "run": "—" },
+          { "day": "Thu", "iso": "2026-06-04", "dateLabel": "Jun 4",  "training": "Shoulders + Abs",              "run": "—" },
+          { "day": "Fri", "iso": "2026-06-05", "dateLabel": "Jun 5",  "training": "Legs (quads + hamstrings)",    "run": "—" },
+          { "day": "Sat", "iso": "2026-06-06", "dateLabel": "Jun 6",  "training": "Rest",                         "run": "—" },
+          { "day": "Sun", "iso": "2026-06-07", "dateLabel": "Jun 7",  "training": "Rest",                         "run": "—" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Week 2",
+        "subtitle": "Volume Up",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-08", "dateLabel": "Jun 8",  "training": "Chest + Triceps",              "run": "—" },
+          { "day": "Tue", "iso": "2026-06-09", "dateLabel": "Jun 9",  "training": "Back + Biceps",                "run": "—" },
+          { "day": "Wed", "iso": "2026-06-10", "dateLabel": "Jun 10", "training": "Rest",                         "run": "—" },
+          { "day": "Thu", "iso": "2026-06-11", "dateLabel": "Jun 11", "training": "Shoulders + Abs",              "run": "—" },
+          { "day": "Fri", "iso": "2026-06-12", "dateLabel": "Jun 12", "training": "Legs",                         "run": "—" },
+          { "day": "Sat", "iso": "2026-06-13", "dateLabel": "Jun 13", "training": "Rest",                         "run": "—" },
+          { "day": "Sun", "iso": "2026-06-14", "dateLabel": "Jun 14", "training": "Rest",                         "run": "—" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Week 3",
+        "subtitle": "Intensification",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-15", "dateLabel": "Jun 15", "training": "Chest + Triceps — heavier",    "run": "—" },
+          { "day": "Tue", "iso": "2026-06-16", "dateLabel": "Jun 16", "training": "Back + Biceps — heavier",      "run": "—" },
+          { "day": "Wed", "iso": "2026-06-17", "dateLabel": "Jun 17", "training": "Rest",                         "run": "—" },
+          { "day": "Thu", "iso": "2026-06-18", "dateLabel": "Jun 18", "training": "Shoulders + Abs — heavier",    "run": "—" },
+          { "day": "Fri", "iso": "2026-06-19", "dateLabel": "Jun 19", "training": "Legs — heavier",               "run": "—" },
+          { "day": "Sat", "iso": "2026-06-20", "dateLabel": "Jun 20", "training": "Rest",                         "run": "—" },
+          { "day": "Sun", "iso": "2026-06-21", "dateLabel": "Jun 21", "training": "Rest",                         "run": "—" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Week 4",
+        "subtitle": "Deload",
+        "volume": "3 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-22", "dateLabel": "Jun 22", "training": "Full body — light",            "run": "—" },
+          { "day": "Tue", "iso": "2026-06-23", "dateLabel": "Jun 23", "training": "Rest",                         "run": "—" },
+          { "day": "Wed", "iso": "2026-06-24", "dateLabel": "Jun 24", "training": "Upper body — light",           "run": "—" },
+          { "day": "Thu", "iso": "2026-06-25", "dateLabel": "Jun 25", "training": "Rest",                         "run": "—" },
+          { "day": "Fri", "iso": "2026-06-26", "dateLabel": "Jun 26", "training": "Lower body — light",           "run": "—" },
+          { "day": "Sat", "iso": "2026-06-27", "dateLabel": "Jun 27", "training": "Rest",                         "run": "—" },
+          { "day": "Sun", "iso": "2026-06-28", "dateLabel": "Jun 28", "training": "Rest",                         "run": "—" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Week 5",
+        "subtitle": "Hypertrophy Block 2",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-29", "dateLabel": "Jun 29", "training": "Chest + Triceps",              "run": "—" },
+          { "day": "Tue", "iso": "2026-06-30", "dateLabel": "Jun 30", "training": "Back + Biceps",                "run": "—" },
+          { "day": "Wed", "iso": "2026-07-01", "dateLabel": "Jul 1",  "training": "Rest",                         "run": "—" },
+          { "day": "Thu", "iso": "2026-07-02", "dateLabel": "Jul 2",  "training": "Shoulders + Abs",              "run": "—" },
+          { "day": "Fri", "iso": "2026-07-03", "dateLabel": "Jul 3",  "training": "Legs",                         "run": "—" },
+          { "day": "Sat", "iso": "2026-07-04", "dateLabel": "Jul 4",  "training": "Rest",                         "run": "—" },
+          { "day": "Sun", "iso": "2026-07-05", "dateLabel": "Jul 5",  "training": "Rest",                         "run": "—" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Week 6",
+        "subtitle": "Volume Peak",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-06", "dateLabel": "Jul 6",  "training": "Chest + Triceps",              "run": "—" },
+          { "day": "Tue", "iso": "2026-07-07", "dateLabel": "Jul 7",  "training": "Back + Biceps",                "run": "—" },
+          { "day": "Wed", "iso": "2026-07-08", "dateLabel": "Jul 8",  "training": "Rest",                         "run": "—" },
+          { "day": "Thu", "iso": "2026-07-09", "dateLabel": "Jul 9",  "training": "Shoulders + Abs",              "run": "—" },
+          { "day": "Fri", "iso": "2026-07-10", "dateLabel": "Jul 10", "training": "Legs",                         "run": "—" },
+          { "day": "Sat", "iso": "2026-07-11", "dateLabel": "Jul 11", "training": "Rest",                         "run": "—" },
+          { "day": "Sun", "iso": "2026-07-12", "dateLabel": "Jul 12", "training": "Rest",                         "run": "—" }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Week 7",
+        "subtitle": "Strength Focus",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-13", "dateLabel": "Jul 13", "training": "Chest + Triceps — 5x5",        "run": "—" },
+          { "day": "Tue", "iso": "2026-07-14", "dateLabel": "Jul 14", "training": "Back + Biceps — 5x5",          "run": "—" },
+          { "day": "Wed", "iso": "2026-07-15", "dateLabel": "Jul 15", "training": "Rest",                         "run": "—" },
+          { "day": "Thu", "iso": "2026-07-16", "dateLabel": "Jul 16", "training": "Shoulders + Abs",              "run": "—" },
+          { "day": "Fri", "iso": "2026-07-17", "dateLabel": "Jul 17", "training": "Legs — 5x5",                   "run": "—" },
+          { "day": "Sat", "iso": "2026-07-18", "dateLabel": "Jul 18", "training": "Rest",                         "run": "—" },
+          { "day": "Sun", "iso": "2026-07-19", "dateLabel": "Jul 19", "training": "Rest",                         "run": "—" }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Week 8",
+        "subtitle": "Deload",
+        "volume": "3 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-20", "dateLabel": "Jul 20", "training": "Full body — light",            "run": "—" },
+          { "day": "Tue", "iso": "2026-07-21", "dateLabel": "Jul 21", "training": "Rest",                         "run": "—" },
+          { "day": "Wed", "iso": "2026-07-22", "dateLabel": "Jul 22", "training": "Upper body — light",           "run": "—" },
+          { "day": "Thu", "iso": "2026-07-23", "dateLabel": "Jul 23", "training": "Rest",                         "run": "—" },
+          { "day": "Fri", "iso": "2026-07-24", "dateLabel": "Jul 24", "training": "Lower body — light",           "run": "—" },
+          { "day": "Sat", "iso": "2026-07-25", "dateLabel": "Jul 25", "training": "Rest",                         "run": "—" },
+          { "day": "Sun", "iso": "2026-07-26", "dateLabel": "Jul 26", "training": "Rest",                         "run": "—" }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Week 9",
+        "subtitle": "Power Phase",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-27", "dateLabel": "Jul 27", "training": "Chest + Triceps — heavy",      "run": "—" },
+          { "day": "Tue", "iso": "2026-07-28", "dateLabel": "Jul 28", "training": "Back + Biceps — heavy",        "run": "—" },
+          { "day": "Wed", "iso": "2026-07-29", "dateLabel": "Jul 29", "training": "Rest",                         "run": "—" },
+          { "day": "Thu", "iso": "2026-07-30", "dateLabel": "Jul 30", "training": "Shoulders + Abs",              "run": "—" },
+          { "day": "Fri", "iso": "2026-07-31", "dateLabel": "Jul 31", "training": "Legs — heavy",                 "run": "—" },
+          { "day": "Sat", "iso": "2026-08-01", "dateLabel": "Aug 1",  "training": "Rest",                         "run": "—" },
+          { "day": "Sun", "iso": "2026-08-02", "dateLabel": "Aug 2",  "training": "Rest",                         "run": "—" }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Week 10",
+        "subtitle": "Peak Volume",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-08-03", "dateLabel": "Aug 3",  "training": "Chest + Triceps",              "run": "—" },
+          { "day": "Tue", "iso": "2026-08-04", "dateLabel": "Aug 4",  "training": "Back + Biceps",                "run": "—" },
+          { "day": "Wed", "iso": "2026-08-05", "dateLabel": "Aug 5",  "training": "Rest",                         "run": "—" },
+          { "day": "Thu", "iso": "2026-08-06", "dateLabel": "Aug 6",  "training": "Shoulders + Abs",              "run": "—" },
+          { "day": "Fri", "iso": "2026-08-07", "dateLabel": "Aug 7",  "training": "Legs",                         "run": "—" },
+          { "day": "Sat", "iso": "2026-08-08", "dateLabel": "Aug 8",  "training": "Rest",                         "run": "—" },
+          { "day": "Sun", "iso": "2026-08-09", "dateLabel": "Aug 9",  "training": "Rest",                         "run": "—" }
+        ]
+      },
+      {
+        "id": 11,
+        "title": "Week 11",
+        "subtitle": "Strength Peak",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-08-10", "dateLabel": "Aug 10", "training": "Chest + Triceps — 3RM attempt", "run": "—" },
+          { "day": "Tue", "iso": "2026-08-11", "dateLabel": "Aug 11", "training": "Back + Biceps — heavy",         "run": "—" },
+          { "day": "Wed", "iso": "2026-08-12", "dateLabel": "Aug 12", "training": "Rest",                          "run": "—" },
+          { "day": "Thu", "iso": "2026-08-13", "dateLabel": "Aug 13", "training": "Shoulders + Abs",               "run": "—" },
+          { "day": "Fri", "iso": "2026-08-14", "dateLabel": "Aug 14", "training": "Legs — 3RM attempt",            "run": "—" },
+          { "day": "Sat", "iso": "2026-08-15", "dateLabel": "Aug 15", "training": "Rest",                          "run": "—" },
+          { "day": "Sun", "iso": "2026-08-16", "dateLabel": "Aug 16", "training": "Rest",                          "run": "—" }
+        ]
+      },
+      {
+        "id": 12,
+        "title": "Week 12",
+        "subtitle": "Final Deload",
+        "volume": "3 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-08-17", "dateLabel": "Aug 17", "training": "Full body — light",             "run": "—" },
+          { "day": "Tue", "iso": "2026-08-18", "dateLabel": "Aug 18", "training": "Rest",                          "run": "—" },
+          { "day": "Wed", "iso": "2026-08-19", "dateLabel": "Aug 19", "training": "Upper body — light",            "run": "—" },
+          { "day": "Thu", "iso": "2026-08-20", "dateLabel": "Aug 20", "training": "Rest",                          "run": "—" },
+          { "day": "Fri", "iso": "2026-08-21", "dateLabel": "Aug 21", "training": "Lower body — light",            "run": "—" },
+          { "day": "Sat", "iso": "2026-08-22", "dateLabel": "Aug 22", "training": "Rest",                          "run": "—" },
+          { "day": "Sun", "iso": "2026-08-23", "dateLabel": "Aug 23", "training": "Rest",                          "run": "—" }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "strength-recomp-8-weeks",
+    "title": "Strength Recomp 8 Weeks",
+    "description": "8-week body recomposition program. 4 gym sessions per week with strategic active recovery days. Build muscle while shedding body fat.",
+    "duration": "8 weeks",
+    "totalKm": "—",
+    "goal": "Recomposition",
+    "tags": ["fat loss", "gain weight"],
+    "weeks": [
+      {
+        "id": 1,
+        "title": "Week 1",
+        "subtitle": "Baseline",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-01", "dateLabel": "Jun 1",  "training": "Upper A (push focus)",          "run": "—" },
+          { "day": "Tue", "iso": "2026-06-02", "dateLabel": "Jun 2",  "training": "Lower A (quad focus)",          "run": "—" },
+          { "day": "Wed", "iso": "2026-06-03", "dateLabel": "Jun 3",  "training": "Active recovery — walk",        "run": "—" },
+          { "day": "Thu", "iso": "2026-06-04", "dateLabel": "Jun 4",  "training": "Upper B (pull focus)",          "run": "—" },
+          { "day": "Fri", "iso": "2026-06-05", "dateLabel": "Jun 5",  "training": "Lower B (hip focus)",           "run": "—" },
+          { "day": "Sat", "iso": "2026-06-06", "dateLabel": "Jun 6",  "training": "Active recovery — light walk",  "run": "—" },
+          { "day": "Sun", "iso": "2026-06-07", "dateLabel": "Jun 7",  "training": "Rest",                          "run": "—" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Week 2",
+        "subtitle": "Build",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-08", "dateLabel": "Jun 8",  "training": "Upper A — progressive overload","run": "—" },
+          { "day": "Tue", "iso": "2026-06-09", "dateLabel": "Jun 9",  "training": "Lower A — progressive overload","run": "—" },
+          { "day": "Wed", "iso": "2026-06-10", "dateLabel": "Jun 10", "training": "Active recovery",               "run": "—" },
+          { "day": "Thu", "iso": "2026-06-11", "dateLabel": "Jun 11", "training": "Upper B — progressive overload","run": "—" },
+          { "day": "Fri", "iso": "2026-06-12", "dateLabel": "Jun 12", "training": "Lower B — progressive overload","run": "—" },
+          { "day": "Sat", "iso": "2026-06-13", "dateLabel": "Jun 13", "training": "Active recovery",               "run": "—" },
+          { "day": "Sun", "iso": "2026-06-14", "dateLabel": "Jun 14", "training": "Rest",                          "run": "—" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Week 3",
+        "subtitle": "Overload",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-15", "dateLabel": "Jun 15", "training": "Upper A — added sets",          "run": "—" },
+          { "day": "Tue", "iso": "2026-06-16", "dateLabel": "Jun 16", "training": "Lower A — added sets",          "run": "—" },
+          { "day": "Wed", "iso": "2026-06-17", "dateLabel": "Jun 17", "training": "Active recovery",               "run": "—" },
+          { "day": "Thu", "iso": "2026-06-18", "dateLabel": "Jun 18", "training": "Upper B — added sets",          "run": "—" },
+          { "day": "Fri", "iso": "2026-06-19", "dateLabel": "Jun 19", "training": "Lower B — added sets",          "run": "—" },
+          { "day": "Sat", "iso": "2026-06-20", "dateLabel": "Jun 20", "training": "Active recovery",               "run": "—" },
+          { "day": "Sun", "iso": "2026-06-21", "dateLabel": "Jun 21", "training": "Rest",                          "run": "—" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Week 4",
+        "subtitle": "Deload",
+        "volume": "3 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-22", "dateLabel": "Jun 22", "training": "Upper body — reduced",          "run": "—" },
+          { "day": "Tue", "iso": "2026-06-23", "dateLabel": "Jun 23", "training": "Rest",                          "run": "—" },
+          { "day": "Wed", "iso": "2026-06-24", "dateLabel": "Jun 24", "training": "Full body — light",             "run": "—" },
+          { "day": "Thu", "iso": "2026-06-25", "dateLabel": "Jun 25", "training": "Rest",                          "run": "—" },
+          { "day": "Fri", "iso": "2026-06-26", "dateLabel": "Jun 26", "training": "Lower body — light",            "run": "—" },
+          { "day": "Sat", "iso": "2026-06-27", "dateLabel": "Jun 27", "training": "Rest",                          "run": "—" },
+          { "day": "Sun", "iso": "2026-06-28", "dateLabel": "Jun 28", "training": "Rest",                          "run": "—" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Week 5",
+        "subtitle": "Intensification",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-29", "dateLabel": "Jun 29", "training": "Upper A — heavier weights",     "run": "—" },
+          { "day": "Tue", "iso": "2026-06-30", "dateLabel": "Jun 30", "training": "Lower A — heavier weights",     "run": "—" },
+          { "day": "Wed", "iso": "2026-07-01", "dateLabel": "Jul 1",  "training": "Active recovery",               "run": "—" },
+          { "day": "Thu", "iso": "2026-07-02", "dateLabel": "Jul 2",  "training": "Upper B — heavier weights",     "run": "—" },
+          { "day": "Fri", "iso": "2026-07-03", "dateLabel": "Jul 3",  "training": "Lower B — heavier weights",     "run": "—" },
+          { "day": "Sat", "iso": "2026-07-04", "dateLabel": "Jul 4",  "training": "Active recovery",               "run": "—" },
+          { "day": "Sun", "iso": "2026-07-05", "dateLabel": "Jul 5",  "training": "Rest",                          "run": "—" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Week 6",
+        "subtitle": "Density",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-06", "dateLabel": "Jul 6",  "training": "Upper A — shorter rest periods","run": "—" },
+          { "day": "Tue", "iso": "2026-07-07", "dateLabel": "Jul 7",  "training": "Lower A — shorter rest periods","run": "—" },
+          { "day": "Wed", "iso": "2026-07-08", "dateLabel": "Jul 8",  "training": "Active recovery",               "run": "—" },
+          { "day": "Thu", "iso": "2026-07-09", "dateLabel": "Jul 9",  "training": "Upper B — shorter rest periods","run": "—" },
+          { "day": "Fri", "iso": "2026-07-10", "dateLabel": "Jul 10", "training": "Lower B — shorter rest periods","run": "—" },
+          { "day": "Sat", "iso": "2026-07-11", "dateLabel": "Jul 11", "training": "Active recovery",               "run": "—" },
+          { "day": "Sun", "iso": "2026-07-12", "dateLabel": "Jul 12", "training": "Rest",                          "run": "—" }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Week 7",
+        "subtitle": "Peak",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-13", "dateLabel": "Jul 13", "training": "Upper A — PR attempt",          "run": "—" },
+          { "day": "Tue", "iso": "2026-07-14", "dateLabel": "Jul 14", "training": "Lower A — PR attempt",          "run": "—" },
+          { "day": "Wed", "iso": "2026-07-15", "dateLabel": "Jul 15", "training": "Active recovery",               "run": "—" },
+          { "day": "Thu", "iso": "2026-07-16", "dateLabel": "Jul 16", "training": "Upper B — PR attempt",          "run": "—" },
+          { "day": "Fri", "iso": "2026-07-17", "dateLabel": "Jul 17", "training": "Lower B — PR attempt",          "run": "—" },
+          { "day": "Sat", "iso": "2026-07-18", "dateLabel": "Jul 18", "training": "Active recovery",               "run": "—" },
+          { "day": "Sun", "iso": "2026-07-19", "dateLabel": "Jul 19", "training": "Rest",                          "run": "—" }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Week 8",
+        "subtitle": "Final Deload",
+        "volume": "3 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-20", "dateLabel": "Jul 20", "training": "Upper body — light",            "run": "—" },
+          { "day": "Tue", "iso": "2026-07-21", "dateLabel": "Jul 21", "training": "Rest",                          "run": "—" },
+          { "day": "Wed", "iso": "2026-07-22", "dateLabel": "Jul 22", "training": "Full body — light",             "run": "—" },
+          { "day": "Thu", "iso": "2026-07-23", "dateLabel": "Jul 23", "training": "Rest",                          "run": "—" },
+          { "day": "Fri", "iso": "2026-07-24", "dateLabel": "Jul 24", "training": "Lower body — light",            "run": "—" },
+          { "day": "Sat", "iso": "2026-07-25", "dateLabel": "Jul 25", "training": "Rest",                          "run": "—" },
+          { "day": "Sun", "iso": "2026-07-26", "dateLabel": "Jul 26", "training": "Rest",                          "run": "—" }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "half-marathon-8-weeks",
+    "title": "Half Marathon 8 Weeks",
+    "description": "8-week half marathon training plan. 4 runs per week progressing from 30 km to 50 km weekly volume, targeting sub-1:50.",
+    "duration": "8 weeks",
+    "totalKm": "~320 km",
+    "goal": "Sub 1:50",
+    "tags": ["running"],
+    "weeks": [
+      {
+        "id": 1,
+        "title": "Week 1",
+        "subtitle": "Easy Miles",
+        "volume": "~30 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-01", "dateLabel": "Jun 1",  "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-06-02", "dateLabel": "Jun 2",  "training": "Easy run 6 km",                  "run": "6" },
+          { "day": "Wed", "iso": "2026-06-03", "dateLabel": "Jun 3",  "training": "Recovery run 5 km",              "run": "5" },
+          { "day": "Thu", "iso": "2026-06-04", "dateLabel": "Jun 4",  "training": "Tempo run 8 km",                 "run": "8" },
+          { "day": "Fri", "iso": "2026-06-05", "dateLabel": "Jun 5",  "training": "Rest",                           "run": "—" },
+          { "day": "Sat", "iso": "2026-06-06", "dateLabel": "Jun 6",  "training": "Long run 11 km easy",            "run": "11", "bold": true },
+          { "day": "Sun", "iso": "2026-06-07", "dateLabel": "Jun 7",  "training": "Rest or walk",                   "run": "—" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Week 2",
+        "subtitle": "Volume Build",
+        "volume": "~35 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-08", "dateLabel": "Jun 8",  "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-06-09", "dateLabel": "Jun 9",  "training": "Easy run 7 km",                  "run": "7" },
+          { "day": "Wed", "iso": "2026-06-10", "dateLabel": "Jun 10", "training": "Recovery run 5 km",              "run": "5" },
+          { "day": "Thu", "iso": "2026-06-11", "dateLabel": "Jun 11", "training": "Intervals 10 km",                "run": "10" },
+          { "day": "Fri", "iso": "2026-06-12", "dateLabel": "Jun 12", "training": "Rest",                           "run": "—" },
+          { "day": "Sat", "iso": "2026-06-13", "dateLabel": "Jun 13", "training": "Long run 13 km",                 "run": "13", "bold": true },
+          { "day": "Sun", "iso": "2026-06-14", "dateLabel": "Jun 14", "training": "Rest",                           "run": "—" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Week 3",
+        "subtitle": "Threshold Work",
+        "volume": "~38 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-15", "dateLabel": "Jun 15", "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-06-16", "dateLabel": "Jun 16", "training": "Easy run 8 km",                  "run": "8" },
+          { "day": "Wed", "iso": "2026-06-17", "dateLabel": "Jun 17", "training": "Recovery run 5 km",              "run": "5" },
+          { "day": "Thu", "iso": "2026-06-18", "dateLabel": "Jun 18", "training": "Threshold 10 km",               "run": "10" },
+          { "day": "Fri", "iso": "2026-06-19", "dateLabel": "Jun 19", "training": "Rest",                           "run": "—" },
+          { "day": "Sat", "iso": "2026-06-20", "dateLabel": "Jun 20", "training": "Long run 15 km",                 "run": "15", "bold": true },
+          { "day": "Sun", "iso": "2026-06-21", "dateLabel": "Jun 21", "training": "Rest",                           "run": "—" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Week 4",
+        "subtitle": "Deload",
+        "volume": "~28 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-22", "dateLabel": "Jun 22", "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-06-23", "dateLabel": "Jun 23", "training": "Easy run 6 km",                  "run": "6" },
+          { "day": "Wed", "iso": "2026-06-24", "dateLabel": "Jun 24", "training": "Recovery 5 km",                  "run": "5" },
+          { "day": "Thu", "iso": "2026-06-25", "dateLabel": "Jun 25", "training": "Easy run 7 km",                  "run": "7" },
+          { "day": "Fri", "iso": "2026-06-26", "dateLabel": "Jun 26", "training": "Rest",                           "run": "—" },
+          { "day": "Sat", "iso": "2026-06-27", "dateLabel": "Jun 27", "training": "Long run 10 km",                 "run": "10", "bold": true },
+          { "day": "Sun", "iso": "2026-06-28", "dateLabel": "Jun 28", "training": "Rest",                           "run": "—" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Week 5",
+        "subtitle": "Pace Work",
+        "volume": "~42 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-29", "dateLabel": "Jun 29", "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-06-30", "dateLabel": "Jun 30", "training": "Easy run 8 km",                  "run": "8" },
+          { "day": "Wed", "iso": "2026-07-01", "dateLabel": "Jul 1",  "training": "Recovery 6 km",                  "run": "6" },
+          { "day": "Thu", "iso": "2026-07-02", "dateLabel": "Jul 2",  "training": "Intervals 11 km",               "run": "11" },
+          { "day": "Fri", "iso": "2026-07-03", "dateLabel": "Jul 3",  "training": "Rest",                           "run": "—" },
+          { "day": "Sat", "iso": "2026-07-04", "dateLabel": "Jul 4",  "training": "Long run 17 km",                 "run": "17", "bold": true },
+          { "day": "Sun", "iso": "2026-07-05", "dateLabel": "Jul 5",  "training": "Rest",                           "run": "—" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Week 6",
+        "subtitle": "Tune-Up",
+        "volume": "~45 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-06", "dateLabel": "Jul 6",  "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-07-07", "dateLabel": "Jul 7",  "training": "Easy run 9 km",                  "run": "9" },
+          { "day": "Wed", "iso": "2026-07-08", "dateLabel": "Jul 8",  "training": "Recovery 6 km",                  "run": "6" },
+          { "day": "Thu", "iso": "2026-07-09", "dateLabel": "Jul 9",  "training": "Tempo 12 km",                    "run": "12" },
+          { "day": "Fri", "iso": "2026-07-10", "dateLabel": "Jul 10", "training": "Rest",                           "run": "—" },
+          { "day": "Sat", "iso": "2026-07-11", "dateLabel": "Jul 11", "training": "Long run 18 km",                 "run": "18", "bold": true },
+          { "day": "Sun", "iso": "2026-07-12", "dateLabel": "Jul 12", "training": "Rest",                           "run": "—" }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Week 7",
+        "subtitle": "Taper",
+        "volume": "~35 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-13", "dateLabel": "Jul 13", "training": "Rest",                           "run": "—" },
+          { "day": "Tue", "iso": "2026-07-14", "dateLabel": "Jul 14", "training": "Easy run 8 km",                  "run": "8" },
+          { "day": "Wed", "iso": "2026-07-15", "dateLabel": "Jul 15", "training": "Recovery 5 km",                  "run": "5" },
+          { "day": "Thu", "iso": "2026-07-16", "dateLabel": "Jul 16", "training": "Tempo 8 km",                     "run": "8" },
+          { "day": "Fri", "iso": "2026-07-17", "dateLabel": "Jul 17", "training": "Rest",                           "run": "—" },
+          { "day": "Sat", "iso": "2026-07-18", "dateLabel": "Jul 18", "training": "Long run 14 km",                 "run": "14", "bold": true },
+          { "day": "Sun", "iso": "2026-07-19", "dateLabel": "Jul 19", "training": "Rest",                           "run": "—" }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Race Week",
+        "subtitle": "Half Marathon",
+        "volume": "21.1 km race",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-20", "dateLabel": "Jul 20", "training": "Easy 6 km",                      "run": "6" },
+          { "day": "Tue", "iso": "2026-07-21", "dateLabel": "Jul 21", "training": "Shakeout 5 km (2 @ goal pace)",   "run": "5" },
+          { "day": "Wed", "iso": "2026-07-22", "dateLabel": "Jul 22", "training": "Rest",                           "run": "—" },
+          { "day": "Thu", "iso": "2026-07-23", "dateLabel": "Jul 23", "training": "Easy 4 km",                      "run": "4" },
+          { "day": "Fri", "iso": "2026-07-24", "dateLabel": "Jul 24", "training": "Rest",                           "run": "—" },
+          { "day": "Sat", "iso": "2026-07-25", "dateLabel": "Jul 25", "training": "Rest",                           "run": "—" },
+          { "day": "Sun", "iso": "2026-07-26", "dateLabel": "Jul 26", "training": "HALF MARATHON — Goal sub-1:50",  "run": "21", "bold": true }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "beginner-5k-6-weeks",
+    "title": "Beginner 5K — 6 Weeks",
+    "description": "6-week beginner running program to complete your first 5K. Run/walk intervals progressing to continuous 5K. Zero experience needed.",
+    "duration": "6 weeks",
+    "totalKm": "~60 km",
+    "goal": "Complete 5K",
+    "tags": ["running"],
+    "weeks": [
+      {
+        "id": 1,
+        "title": "Week 1",
+        "subtitle": "Walk/Run",
+        "volume": "~9 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-01", "dateLabel": "Jun 1",  "training": "Run 1 min / Walk 2 min × 8 (3 km)", "run": "3" },
+          { "day": "Tue", "iso": "2026-06-02", "dateLabel": "Jun 2",  "training": "Rest",                               "run": "—" },
+          { "day": "Wed", "iso": "2026-06-03", "dateLabel": "Jun 3",  "training": "Run 1 min / Walk 2 min × 8 (3 km)", "run": "3" },
+          { "day": "Thu", "iso": "2026-06-04", "dateLabel": "Jun 4",  "training": "Rest",                               "run": "—" },
+          { "day": "Fri", "iso": "2026-06-05", "dateLabel": "Jun 5",  "training": "Run 1.5 min / Walk 2 min × 6 (3 km)","run": "3" },
+          { "day": "Sat", "iso": "2026-06-06", "dateLabel": "Jun 6",  "training": "Rest",                               "run": "—" },
+          { "day": "Sun", "iso": "2026-06-07", "dateLabel": "Jun 7",  "training": "Rest",                               "run": "—" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Week 2",
+        "subtitle": "Longer Runs",
+        "volume": "~10 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-08", "dateLabel": "Jun 8",  "training": "Run 2 min / Walk 1 min × 8 (3 km)", "run": "3" },
+          { "day": "Tue", "iso": "2026-06-09", "dateLabel": "Jun 9",  "training": "Rest",                               "run": "—" },
+          { "day": "Wed", "iso": "2026-06-10", "dateLabel": "Jun 10", "training": "Run 3 min / Walk 1 min × 6 (3.5 km)","run": "4" },
+          { "day": "Thu", "iso": "2026-06-11", "dateLabel": "Jun 11", "training": "Rest",                               "run": "—" },
+          { "day": "Fri", "iso": "2026-06-12", "dateLabel": "Jun 12", "training": "Run 3 min / Walk 1 min × 7 (3.5 km)","run": "3" },
+          { "day": "Sat", "iso": "2026-06-13", "dateLabel": "Jun 13", "training": "Rest",                               "run": "—" },
+          { "day": "Sun", "iso": "2026-06-14", "dateLabel": "Jun 14", "training": "Rest",                               "run": "—" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Week 3",
+        "subtitle": "Continuous Running",
+        "volume": "~12 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-15", "dateLabel": "Jun 15", "training": "Run 5 min / Walk 1 min × 4 (4 km)", "run": "4" },
+          { "day": "Tue", "iso": "2026-06-16", "dateLabel": "Jun 16", "training": "Rest",                               "run": "—" },
+          { "day": "Wed", "iso": "2026-06-17", "dateLabel": "Jun 17", "training": "Run 8 min / Walk 1 min × 3 (4 km)", "run": "4" },
+          { "day": "Thu", "iso": "2026-06-18", "dateLabel": "Jun 18", "training": "Rest",                               "run": "—" },
+          { "day": "Fri", "iso": "2026-06-19", "dateLabel": "Jun 19", "training": "Easy continuous run 4 km",           "run": "4" },
+          { "day": "Sat", "iso": "2026-06-20", "dateLabel": "Jun 20", "training": "Rest",                               "run": "—" },
+          { "day": "Sun", "iso": "2026-06-21", "dateLabel": "Jun 21", "training": "Rest",                               "run": "—" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Week 4",
+        "subtitle": "5K Approach",
+        "volume": "~13 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-22", "dateLabel": "Jun 22", "training": "Easy run 4 km",                     "run": "4" },
+          { "day": "Tue", "iso": "2026-06-23", "dateLabel": "Jun 23", "training": "Rest",                               "run": "—" },
+          { "day": "Wed", "iso": "2026-06-24", "dateLabel": "Jun 24", "training": "Easy run 4.5 km",                   "run": "5" },
+          { "day": "Thu", "iso": "2026-06-25", "dateLabel": "Jun 25", "training": "Rest",                               "run": "—" },
+          { "day": "Fri", "iso": "2026-06-26", "dateLabel": "Jun 26", "training": "Easy run 4 km",                     "run": "4" },
+          { "day": "Sat", "iso": "2026-06-27", "dateLabel": "Jun 27", "training": "Rest",                               "run": "—" },
+          { "day": "Sun", "iso": "2026-06-28", "dateLabel": "Jun 28", "training": "Rest",                               "run": "—" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Week 5",
+        "subtitle": "Almost There",
+        "volume": "~14 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-29", "dateLabel": "Jun 29", "training": "Easy run 4.5 km",                   "run": "5" },
+          { "day": "Tue", "iso": "2026-06-30", "dateLabel": "Jun 30", "training": "Rest",                               "run": "—" },
+          { "day": "Wed", "iso": "2026-07-01", "dateLabel": "Jul 1",  "training": "Steady run 5 km",                   "run": "5" },
+          { "day": "Thu", "iso": "2026-07-02", "dateLabel": "Jul 2",  "training": "Rest",                               "run": "—" },
+          { "day": "Fri", "iso": "2026-07-03", "dateLabel": "Jul 3",  "training": "Easy run 4 km",                     "run": "4" },
+          { "day": "Sat", "iso": "2026-07-04", "dateLabel": "Jul 4",  "training": "Rest",                               "run": "—" },
+          { "day": "Sun", "iso": "2026-07-05", "dateLabel": "Jul 5",  "training": "Rest",                               "run": "—" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Week 6",
+        "subtitle": "Race Week",
+        "volume": "5K race",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-06", "dateLabel": "Jul 6",  "training": "Easy run 3 km",                     "run": "3" },
+          { "day": "Tue", "iso": "2026-07-07", "dateLabel": "Jul 7",  "training": "Rest",                               "run": "—" },
+          { "day": "Wed", "iso": "2026-07-08", "dateLabel": "Jul 8",  "training": "Easy run 2 km",                     "run": "2" },
+          { "day": "Thu", "iso": "2026-07-09", "dateLabel": "Jul 9",  "training": "Rest",                               "run": "—" },
+          { "day": "Fri", "iso": "2026-07-10", "dateLabel": "Jul 10", "training": "Rest",                               "run": "—" },
+          { "day": "Sat", "iso": "2026-07-11", "dateLabel": "Jul 11", "training": "Rest",                               "run": "—" },
+          { "day": "Sun", "iso": "2026-07-12", "dateLabel": "Jul 12", "training": "5K RACE — run the whole thing!",    "run": "5", "bold": true }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "upper-lower-4-weeks",
+    "title": "Upper/Lower 4-Day Split",
+    "description": "4-week foundational upper/lower body split. 4 gym sessions per week, ideal for intermediate lifters building balanced strength.",
+    "duration": "4 weeks",
+    "totalKm": "—",
+    "goal": "Strength & balance",
+    "tags": ["gain weight"],
+    "weeks": [
+      {
+        "id": 1,
+        "title": "Week 1",
+        "subtitle": "Learn the Movements",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-01", "dateLabel": "Jun 1",  "training": "Upper A — bench, row, OHP",       "run": "—" },
+          { "day": "Tue", "iso": "2026-06-02", "dateLabel": "Jun 2",  "training": "Lower A — squat, RDL, lunges",    "run": "—" },
+          { "day": "Wed", "iso": "2026-06-03", "dateLabel": "Jun 3",  "training": "Rest",                             "run": "—" },
+          { "day": "Thu", "iso": "2026-06-04", "dateLabel": "Jun 4",  "training": "Upper B — incline, pull-up, fly", "run": "—" },
+          { "day": "Fri", "iso": "2026-06-05", "dateLabel": "Jun 5",  "training": "Lower B — deadlift, leg press",   "run": "—" },
+          { "day": "Sat", "iso": "2026-06-06", "dateLabel": "Jun 6",  "training": "Rest",                             "run": "—" },
+          { "day": "Sun", "iso": "2026-06-07", "dateLabel": "Jun 7",  "training": "Rest",                             "run": "—" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Week 2",
+        "subtitle": "Add Load",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-08", "dateLabel": "Jun 8",  "training": "Upper A — increase weight",        "run": "—" },
+          { "day": "Tue", "iso": "2026-06-09", "dateLabel": "Jun 9",  "training": "Lower A — increase weight",        "run": "—" },
+          { "day": "Wed", "iso": "2026-06-10", "dateLabel": "Jun 10", "training": "Rest",                             "run": "—" },
+          { "day": "Thu", "iso": "2026-06-11", "dateLabel": "Jun 11", "training": "Upper B — increase weight",        "run": "—" },
+          { "day": "Fri", "iso": "2026-06-12", "dateLabel": "Jun 12", "training": "Lower B — increase weight",        "run": "—" },
+          { "day": "Sat", "iso": "2026-06-13", "dateLabel": "Jun 13", "training": "Rest",                             "run": "—" },
+          { "day": "Sun", "iso": "2026-06-14", "dateLabel": "Jun 14", "training": "Rest",                             "run": "—" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Week 3",
+        "subtitle": "Volume Peak",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-15", "dateLabel": "Jun 15", "training": "Upper A — extra sets",             "run": "—" },
+          { "day": "Tue", "iso": "2026-06-16", "dateLabel": "Jun 16", "training": "Lower A — extra sets",             "run": "—" },
+          { "day": "Wed", "iso": "2026-06-17", "dateLabel": "Jun 17", "training": "Rest",                             "run": "—" },
+          { "day": "Thu", "iso": "2026-06-18", "dateLabel": "Jun 18", "training": "Upper B — extra sets",             "run": "—" },
+          { "day": "Fri", "iso": "2026-06-19", "dateLabel": "Jun 19", "training": "Lower B — extra sets",             "run": "—" },
+          { "day": "Sat", "iso": "2026-06-20", "dateLabel": "Jun 20", "training": "Rest",                             "run": "—" },
+          { "day": "Sun", "iso": "2026-06-21", "dateLabel": "Jun 21", "training": "Rest",                             "run": "—" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Week 4",
+        "subtitle": "Deload",
+        "volume": "4 sessions",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-22", "dateLabel": "Jun 22", "training": "Upper A — 50% volume",             "run": "—" },
+          { "day": "Tue", "iso": "2026-06-23", "dateLabel": "Jun 23", "training": "Lower A — 50% volume",             "run": "—" },
+          { "day": "Wed", "iso": "2026-06-24", "dateLabel": "Jun 24", "training": "Rest",                             "run": "—" },
+          { "day": "Thu", "iso": "2026-06-25", "dateLabel": "Jun 25", "training": "Upper B — 50% volume",             "run": "—" },
+          { "day": "Fri", "iso": "2026-06-26", "dateLabel": "Jun 26", "training": "Lower B — 50% volume",             "run": "—" },
+          { "day": "Sat", "iso": "2026-06-27", "dateLabel": "Jun 27", "training": "Rest",                             "run": "—" },
+          { "day": "Sun", "iso": "2026-06-28", "dateLabel": "Jun 28", "training": "Rest",                             "run": "—" }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "endurance-strength-8-weeks",
+    "title": "Endurance + Strength 8 Weeks",
+    "description": "8-week hybrid endurance and strength program. 3 runs and 2 full-body gym sessions per week. Build a strong, capable body for any challenge.",
+    "duration": "8 weeks",
+    "totalKm": "~200 km",
+    "goal": "Hybrid fitness",
+    "tags": ["running", "gain weight"],
+    "weeks": [
+      {
+        "id": 1,
+        "title": "Week 1",
+        "subtitle": "Foundation",
+        "volume": "~25 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-01", "dateLabel": "Jun 1",  "training": "Full body gym A",                 "run": "—" },
+          { "day": "Tue", "iso": "2026-06-02", "dateLabel": "Jun 2",  "training": "Easy run 8 km",                   "run": "8" },
+          { "day": "Wed", "iso": "2026-06-03", "dateLabel": "Jun 3",  "training": "Rest",                             "run": "—" },
+          { "day": "Thu", "iso": "2026-06-04", "dateLabel": "Jun 4",  "training": "Full body gym B",                 "run": "—" },
+          { "day": "Fri", "iso": "2026-06-05", "dateLabel": "Jun 5",  "training": "Tempo run 8 km",                   "run": "8" },
+          { "day": "Sat", "iso": "2026-06-06", "dateLabel": "Jun 6",  "training": "Long run 9 km easy",               "run": "9", "bold": true },
+          { "day": "Sun", "iso": "2026-06-07", "dateLabel": "Jun 7",  "training": "Rest",                             "run": "—" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Week 2",
+        "subtitle": "Build",
+        "volume": "~26 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-08", "dateLabel": "Jun 8",  "training": "Full body gym A",                 "run": "—" },
+          { "day": "Tue", "iso": "2026-06-09", "dateLabel": "Jun 9",  "training": "Easy run 8 km",                   "run": "8" },
+          { "day": "Wed", "iso": "2026-06-10", "dateLabel": "Jun 10", "training": "Rest",                             "run": "—" },
+          { "day": "Thu", "iso": "2026-06-11", "dateLabel": "Jun 11", "training": "Full body gym B",                 "run": "—" },
+          { "day": "Fri", "iso": "2026-06-12", "dateLabel": "Jun 12", "training": "Intervals 8 km",                   "run": "8" },
+          { "day": "Sat", "iso": "2026-06-13", "dateLabel": "Jun 13", "training": "Long run 10 km easy",              "run": "10", "bold": true },
+          { "day": "Sun", "iso": "2026-06-14", "dateLabel": "Jun 14", "training": "Rest",                             "run": "—" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Week 3",
+        "subtitle": "Overload",
+        "volume": "~27 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-15", "dateLabel": "Jun 15", "training": "Full body gym A — heavier",        "run": "—" },
+          { "day": "Tue", "iso": "2026-06-16", "dateLabel": "Jun 16", "training": "Easy run 8 km",                   "run": "8" },
+          { "day": "Wed", "iso": "2026-06-17", "dateLabel": "Jun 17", "training": "Rest",                             "run": "—" },
+          { "day": "Thu", "iso": "2026-06-18", "dateLabel": "Jun 18", "training": "Full body gym B — heavier",        "run": "—" },
+          { "day": "Fri", "iso": "2026-06-19", "dateLabel": "Jun 19", "training": "Tempo run 9 km",                   "run": "9" },
+          { "day": "Sat", "iso": "2026-06-20", "dateLabel": "Jun 20", "training": "Long run 10 km easy",              "run": "10", "bold": true },
+          { "day": "Sun", "iso": "2026-06-21", "dateLabel": "Jun 21", "training": "Rest",                             "run": "—" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Week 4",
+        "subtitle": "Deload",
+        "volume": "~22 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-22", "dateLabel": "Jun 22", "training": "Full body gym — light",            "run": "—" },
+          { "day": "Tue", "iso": "2026-06-23", "dateLabel": "Jun 23", "training": "Easy run 7 km",                   "run": "7" },
+          { "day": "Wed", "iso": "2026-06-24", "dateLabel": "Jun 24", "training": "Rest",                             "run": "—" },
+          { "day": "Thu", "iso": "2026-06-25", "dateLabel": "Jun 25", "training": "Full body gym — light",            "run": "—" },
+          { "day": "Fri", "iso": "2026-06-26", "dateLabel": "Jun 26", "training": "Easy run 7 km",                   "run": "7" },
+          { "day": "Sat", "iso": "2026-06-27", "dateLabel": "Jun 27", "training": "Long run 8 km",                   "run": "8", "bold": true },
+          { "day": "Sun", "iso": "2026-06-28", "dateLabel": "Jun 28", "training": "Rest",                             "run": "—" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Week 5",
+        "subtitle": "Intensify",
+        "volume": "~27 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-06-29", "dateLabel": "Jun 29", "training": "Full body gym A",                 "run": "—" },
+          { "day": "Tue", "iso": "2026-06-30", "dateLabel": "Jun 30", "training": "Easy run 9 km",                   "run": "9" },
+          { "day": "Wed", "iso": "2026-07-01", "dateLabel": "Jul 1",  "training": "Rest",                             "run": "—" },
+          { "day": "Thu", "iso": "2026-07-02", "dateLabel": "Jul 2",  "training": "Full body gym B",                 "run": "—" },
+          { "day": "Fri", "iso": "2026-07-03", "dateLabel": "Jul 3",  "training": "Intervals 9 km",                  "run": "9" },
+          { "day": "Sat", "iso": "2026-07-04", "dateLabel": "Jul 4",  "training": "Long run 9 km",                   "run": "9", "bold": true },
+          { "day": "Sun", "iso": "2026-07-05", "dateLabel": "Jul 5",  "training": "Rest",                             "run": "—" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Week 6",
+        "subtitle": "Peak",
+        "volume": "~28 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-06", "dateLabel": "Jul 6",  "training": "Full body gym A — heavy",          "run": "—" },
+          { "day": "Tue", "iso": "2026-07-07", "dateLabel": "Jul 7",  "training": "Easy run 9 km",                   "run": "9" },
+          { "day": "Wed", "iso": "2026-07-08", "dateLabel": "Jul 8",  "training": "Rest",                             "run": "—" },
+          { "day": "Thu", "iso": "2026-07-09", "dateLabel": "Jul 9",  "training": "Full body gym B — heavy",          "run": "—" },
+          { "day": "Fri", "iso": "2026-07-10", "dateLabel": "Jul 10", "training": "Tempo run 9 km",                   "run": "9" },
+          { "day": "Sat", "iso": "2026-07-11", "dateLabel": "Jul 11", "training": "Long run 10 km",                   "run": "10", "bold": true },
+          { "day": "Sun", "iso": "2026-07-12", "dateLabel": "Jul 12", "training": "Rest",                             "run": "—" }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Week 7",
+        "subtitle": "Consolidate",
+        "volume": "~26 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-13", "dateLabel": "Jul 13", "training": "Full body gym A",                 "run": "—" },
+          { "day": "Tue", "iso": "2026-07-14", "dateLabel": "Jul 14", "training": "Easy run 8 km",                   "run": "8" },
+          { "day": "Wed", "iso": "2026-07-15", "dateLabel": "Jul 15", "training": "Rest",                             "run": "—" },
+          { "day": "Thu", "iso": "2026-07-16", "dateLabel": "Jul 16", "training": "Full body gym B",                 "run": "—" },
+          { "day": "Fri", "iso": "2026-07-17", "dateLabel": "Jul 17", "training": "Intervals 8 km",                  "run": "8" },
+          { "day": "Sat", "iso": "2026-07-18", "dateLabel": "Jul 18", "training": "Long run 10 km",                  "run": "10", "bold": true },
+          { "day": "Sun", "iso": "2026-07-19", "dateLabel": "Jul 19", "training": "Rest",                             "run": "—" }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Week 8",
+        "subtitle": "Final Deload",
+        "volume": "~19 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-07-20", "dateLabel": "Jul 20", "training": "Full body gym — light",            "run": "—" },
+          { "day": "Tue", "iso": "2026-07-21", "dateLabel": "Jul 21", "training": "Easy run 6 km",                   "run": "6" },
+          { "day": "Wed", "iso": "2026-07-22", "dateLabel": "Jul 22", "training": "Rest",                             "run": "—" },
+          { "day": "Thu", "iso": "2026-07-23", "dateLabel": "Jul 23", "training": "Full body gym — light",            "run": "—" },
+          { "day": "Fri", "iso": "2026-07-24", "dateLabel": "Jul 24", "training": "Easy run 6 km",                   "run": "6" },
+          { "day": "Sat", "iso": "2026-07-25", "dateLabel": "Jul 25", "training": "Long run 7 km",                   "run": "7", "bold": true },
+          { "day": "Sun", "iso": "2026-07-26", "dateLabel": "Jul 26", "training": "Rest",                             "run": "—" }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "spartan-beast-5-weeks",
+    "isCurrent": true,
+    "title": "Spartan Beast 5-Week Prep",
+    "description": "5-week Spartan Beast preparation program. Combines trail running, hill repeats, heavy strength & carries, and full OCR simulation circuits. Built to finish race day strong.",
+    "duration": "5 weeks",
+    "totalKm": "~200 km",
+    "startDate": "2026-03-09",
+    "endDate": "2026-05-03",
+    "targetRace": "June 13, 2026",
+    "goal": "Finish",
+    "tags": ["running"],
+    "weeks": [
+      {
+        "id": 1,
+        "title": "Week 1",
+        "subtitle": "Foundation",
+        "volume": "~35 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-08-03", "dateLabel": "Aug 3",  "training": "6–8 km easy run + 15 min incline walk + mobility & sauna",                                                    "run": "7"  },
+          { "day": "Tue", "iso": "2026-08-04", "dateLabel": "Aug 4",  "training": "Strength + Carries: trap bar DL 4×5, Bulgarian split squat 3×10, pull-ups 4 sets, DB press 3×10, farmer carries + dead hangs", "run": "—"  },
+          { "day": "Wed", "iso": "2026-08-05", "dateLabel": "Aug 5",  "training": "Hill Intro: 8 × 60 sec uphill, walk/jog down, 50 walking lunges",                                            "run": "—"  },
+          { "day": "Thu", "iso": "2026-08-06", "dateLabel": "Aug 6",  "training": "Spartan Circuit 4 rounds: 800m run, 15 burpees, 10 pull-ups, 20 box step-ups, 40m carry, dead hangs",        "run": "—"  },
+          { "day": "Fri", "iso": "2026-08-07", "dateLabel": "Aug 7",  "training": "5–6 km recovery run + 20 min incline walk + sauna",                                                          "run": "6"  },
+          { "day": "Sat", "iso": "2026-08-08", "dateLabel": "Aug 8",  "training": "45-min HIIT class + optional grip work",                                                                      "run": "—"  },
+          { "day": "Sun", "iso": "2026-08-09", "dateLabel": "Aug 9",  "training": "Long run 14–16 km easy (trails preferred)",                                                                   "run": "15", "bold": true }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Week 2",
+        "subtitle": "Build",
+        "volume": "~40 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-08-10", "dateLabel": "Aug 10", "training": "6–8 km easy aerobic + mobility & sauna",                                                                      "run": "7"  },
+          { "day": "Tue", "iso": "2026-08-11", "dateLabel": "Aug 11", "training": "Strength + Carries: deadlift, walking lunges, step-ups, pull-ups, heavy carries, towel grip work",            "run": "—"  },
+          { "day": "Wed", "iso": "2026-08-12", "dateLabel": "Aug 12", "training": "Hill Session: 10 × 90 sec uphill + controlled downhill",                                                      "run": "—"  },
+          { "day": "Thu", "iso": "2026-08-13", "dateLabel": "Aug 13", "training": "Spartan Conditioning 5 rounds: 1 km run, 15 burpees, 15 KB swings, 10 pull-ups, crawl + carry",              "run": "—"  },
+          { "day": "Fri", "iso": "2026-08-14", "dateLabel": "Aug 14", "training": "6 km recovery run + mobility & sauna",                                                                        "run": "6"  },
+          { "day": "Sat", "iso": "2026-08-15", "dateLabel": "Aug 15", "training": "45-min HIIT class",                                                                                           "run": "—"  },
+          { "day": "Sun", "iso": "2026-08-16", "dateLabel": "Aug 16", "training": "Hamilton Elevation Run #1 — 16–18 km trails with climbing",                                                   "run": "17", "bold": true }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Week 3",
+        "subtitle": "Peak",
+        "volume": "~45 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-08-17", "dateLabel": "Aug 17", "training": "6–8 km easy run + mobility",                                                                                  "run": "7"  },
+          { "day": "Tue", "iso": "2026-08-18", "dateLabel": "Aug 18", "training": "Heavy Spartan Strength: DL 5×5, step-ups 4×12, weighted pull-ups, heavy carries, core work",                 "run": "—"  },
+          { "day": "Wed", "iso": "2026-08-19", "dateLabel": "Aug 19", "training": "Long Hill Repeats: 5 × 4 min uphill + jog down recovery",                                                     "run": "—"  },
+          { "day": "Thu", "iso": "2026-08-20", "dateLabel": "Aug 20", "training": "Beast Simulation 6 rounds: 1 km run, 20 burpees, pull-ups, carries, lunges, dead hangs, crawl",              "run": "—"  },
+          { "day": "Fri", "iso": "2026-08-21", "dateLabel": "Aug 21", "training": "5–6 km recovery run + sauna",                                                                                 "run": "6"  },
+          { "day": "Sat", "iso": "2026-08-22", "dateLabel": "Aug 22", "training": "HIIT class — moderate intensity",                                                                             "run": "—"  },
+          { "day": "Sun", "iso": "2026-08-23", "dateLabel": "Aug 23", "training": "18–21 km trail run — every 4 km: 20 lunges + 10 burpees",                                                    "run": "20", "bold": true }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Week 4",
+        "subtitle": "Back-Off",
+        "volume": "~35 km",
+        "days": [
+          { "day": "Mon", "iso": "2026-08-24", "dateLabel": "Aug 24", "training": "6 km easy run + mobility",                                                                                    "run": "6"  },
+          { "day": "Tue", "iso": "2026-08-25", "dateLabel": "Aug 25", "training": "Moderate Strength: reduced volume, focus carries + pull-ups",                                                  "run": "—"  },
+          { "day": "Wed", "iso": "2026-08-26", "dateLabel": "Aug 26", "training": "Downhill Durability: 6 × 2 min uphill + faster downhill return",                                              "run": "—"  },
+          { "day": "Thu", "iso": "2026-08-27", "dateLabel": "Aug 27", "training": "Final Spartan Simulation 4–5 rounds: run + burpees + carries + grip",                                        "run": "—"  },
+          { "day": "Fri", "iso": "2026-08-28", "dateLabel": "Aug 28", "training": "Easy 5 km run + sauna",                                                                                       "run": "5"  },
+          { "day": "Sat", "iso": "2026-08-29", "dateLabel": "Aug 29", "training": "45-min HIIT class — light intensity",                                                                         "run": "—"  },
+          { "day": "Sun", "iso": "2026-08-30", "dateLabel": "Aug 30", "training": "Hamilton Elevation Run #2 — 14–16 km controlled trail run",                                                   "run": "15", "bold": true }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Week 5",
+        "subtitle": "Taper",
+        "volume": "Race week",
+        "days": [
+          { "day": "Mon", "iso": "2026-08-31", "dateLabel": "Aug 31", "training": "6 km easy run + mobility & sauna",                                                                            "run": "6"  },
+          { "day": "Tue", "iso": "2026-09-01", "dateLabel": "Sep 1",  "training": "Light full-body strength — no soreness",                                                                      "run": "—"  },
+          { "day": "Wed", "iso": "2026-09-02", "dateLabel": "Sep 2",  "training": "4 × 60 sec uphill — easy effort",                                                                             "run": "—"  },
+          { "day": "Thu", "iso": "2026-09-03", "dateLabel": "Sep 3",  "training": "Easy aerobic run + mobility",                                                                                  "run": "—"  },
+          { "day": "Fri", "iso": "2026-09-04", "dateLabel": "Sep 4",  "training": "OFF or light walk",                                                                                           "run": "—"  },
+          { "day": "Sat", "iso": "2026-09-05", "dateLabel": "Sep 5",  "training": "20–30 min shakeout + grip activation",                                                                        "run": "—"  },
+          { "day": "Sun", "iso": "2026-09-06", "dateLabel": "Sep 6",  "training": "RACE DAY — Spartan Beast",                                                                                    "run": "—",  "bold": true }
+        ]
+      }
+    ]
   }
 ]

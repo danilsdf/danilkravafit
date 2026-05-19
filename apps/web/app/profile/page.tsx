@@ -7,9 +7,10 @@ import HomeHeader from "@/components/headers/HomeHeader";
 import MainFooter from "@/components/footer/MainFooter";
 import ProfileMain, { MembershipBadge } from "./ProfileMain";
 import SavedMealPreps from "./SavedMealPreps";
+import SavedMealPrepSessions from "./SavedMealPrepSessions";
 import SavedRecipes from "./SavedRecipes";
 import TrainingPrograms from "./TrainingPrograms";
-import type { ProfileData, SavedPlanItem, SavedRecipeItem, SavedProgramItem } from "./types";
+import type { ProfileData, SavedPlanItem, SavedRecipeItem, SavedProgramItem, MealPrepSessionItem } from "./types";
 
 export default function ProfilePage() {
   const router = useRouter();
@@ -19,7 +20,9 @@ export default function ProfilePage() {
   const [savedRecipes, setSavedRecipes] = useState<SavedRecipeItem[]>([]);
   const [savedPrograms, setSavedPrograms] = useState<SavedProgramItem[]>([]);
   const [savedLoading, setSavedLoading] = useState(true);
-  const [tab, setTab] = useState<"main" | "plans" | "recipes" | "programs">("main");
+  const [mealPrepSessions, setMealPrepSessions] = useState<MealPrepSessionItem[]>([]);
+  const [sessionsLoading, setSessionsLoading] = useState(true);
+  const [tab, setTab] = useState<"main" | "plans" | "recipes" | "programs" | "meal-prep-sessions">("main");
 
   useEffect(() => {
     fetch("/api/auth/profile")
@@ -42,6 +45,12 @@ export default function ProfilePage() {
       setSavedRecipes(recipes);
       setSavedPrograms(programs);
     }).catch(() => {}).finally(() => setSavedLoading(false));
+
+    fetch("/api/meal-prep-sessions")
+      .then((r) => r.ok ? r.json() : [])
+      .then((data) => setMealPrepSessions(Array.isArray(data) ? data : []))
+      .catch(() => {})
+      .finally(() => setSessionsLoading(false));
   }, [router]);
 
   if (loading) {
@@ -99,8 +108,7 @@ export default function ProfilePage() {
               ["main", "Main"],
               ["plans", "Saved Meal Plans"],
               ["recipes", "Saved Recipes"],
-              ["programs", "Training Programs"],
-            ] as const).map(([t, label]) => (
+              ["programs", "Training Programs"],              ["meal-prep-sessions", "Meal Prep Sessions"],            ] as const).map(([t, label]) => (
               <button
                 key={t}
                 type="button"
@@ -131,6 +139,13 @@ export default function ProfilePage() {
               loading={savedLoading}
               items={savedPrograms}
               onDelete={(id) => setSavedPrograms((prev) => prev.filter((p) => p.id !== id))}
+            />
+          )}
+          {tab === "meal-prep-sessions" && (
+            <SavedMealPrepSessions
+              loading={sessionsLoading}
+              items={mealPrepSessions}
+              onDelete={(id) => setMealPrepSessions((prev) => prev.filter((s) => s._id !== id))}
             />
           )}
         </div>

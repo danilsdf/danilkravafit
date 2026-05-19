@@ -63,7 +63,7 @@ export default function HomePage() {
                       Current Goal
                     </p>
                     <p className="text-base font-bold md:text-lg">
-                      Marathon Prep
+                      Spartan Beast Prep
                     </p>
                   </div>
 
@@ -72,9 +72,9 @@ export default function HomePage() {
                       Next Event
                     </p>
                     <p className="text-base font-bold md:text-lg">
-                      Toronto Marathon
+                      Spartan Beast Race
                     </p>
-                    <p className="mt-1 text-xs text-white/55">May 3, 2026</p>
+                    <p className="mt-1 text-xs text-white/55">June 13, 2026</p>
                   </div>
                 </div>
 

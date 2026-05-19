@@ -45,6 +45,16 @@ export type SavedProgramItem = {
   };
 };
 
+export type MealPrepSessionItem = {
+  _id: string;
+  title: string;
+  calorieGoal: number;
+  macros: { protein: number; fat: number; carbs: number };
+  days: number;
+  ingredients: { name: string; amount: string; unit: string }[];
+  updatedAt: string;
+};
+
 export type MembershipInfo = {
   tier: "Runner" | "HybridAthlete" | "EliteSupporter";
   status: "active" | "trialing" | "canceled" | "past_due" | "unpaid";

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NutritionDashboardCard from "@/components/MealPrepHelper/NutritionDashboardCard";
 
 interface SummaryScreenProps {
@@ -12,6 +12,11 @@ interface SummaryScreenProps {
 	ingredientDB: any[];
 	onBack: () => void;
 	onBackCalories: () => void;
+	// Save / update
+	onSave?: (title: string) => Promise<void>;
+	onUpdate?: (title: string) => Promise<void>;
+	savedSessionId?: string | null;
+	initialTitle?: string;
 }
 
 const SummaryScreen: React.FC<SummaryScreenProps> = ({
@@ -25,7 +30,33 @@ const SummaryScreen: React.FC<SummaryScreenProps> = ({
 	ingredientDB,
 	onBack,
     onBackCalories,
+	onSave,
+	onUpdate,
+	savedSessionId,
+	initialTitle = "",
 }) => {
+	const [title, setTitle] = useState(initialTitle);
+	const [saving, setSaving] = useState(false);
+	const [saveStatus, setSaveStatus] = useState<"idle" | "saved" | "error">("idle");
+
+	async function handleSave() {
+		if (!title.trim() || saving) return;
+		setSaving(true);
+		setSaveStatus("idle");
+		try {
+			if (savedSessionId && onUpdate) {
+				await onUpdate(title.trim());
+			} else if (onSave) {
+				await onSave(title.trim());
+			}
+			setSaveStatus("saved");
+		} catch {
+			setSaveStatus("error");
+		} finally {
+			setSaving(false);
+		}
+	}
+
 	function getIngredientNutrition(ing: { name: string; unit: string; amount: string }) {
 		const db = (ingredientDB as any[]).find(i => i.name === ing.name);
 		if (!db) return null;
@@ -150,6 +181,36 @@ const SummaryScreen: React.FC<SummaryScreenProps> = ({
 					<div className="text-yellow-600 mt-2">Calories are over the goal by more than 5%. Consider reducing portions.</div>
 				)}
 			</div>
+			{(onSave || onUpdate) && (
+				<div className="mt-6 mb-2 rounded-2xl border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900 p-4 flex flex-col gap-3">
+					<div className="text-sm font-semibold text-neutral-700 dark:text-neutral-200">
+						{savedSessionId ? "Update saved meal prep" : "Save this meal prep"}
+					</div>
+					<input
+						type="text"
+						placeholder="Meal prep title…"
+						value={title}
+						onChange={e => { setTitle(e.target.value); setSaveStatus("idle"); }}
+						className="rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-3 py-2 text-sm text-neutral-900 dark:text-white placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
+					/>
+					<div className="flex items-center gap-3">
+						<button
+							type="button"
+							onClick={handleSave}
+							disabled={saving || !title.trim()}
+							className="rounded-xl bg-yellow-500 px-5 py-2 text-sm font-bold text-white shadow-sm hover:bg-yellow-600 active:scale-95 transition disabled:opacity-40 disabled:pointer-events-none"
+						>
+							{saving ? "Saving…" : savedSessionId ? "Update" : "Save"}
+						</button>
+						{saveStatus === "saved" && (
+							<span className="text-sm text-green-600 dark:text-green-400">✓ {savedSessionId ? "Updated!" : "Saved!"}</span>
+						)}
+						{saveStatus === "error" && (
+							<span className="text-sm text-red-500">Failed to save. Try again.</span>
+						)}
+					</div>
+				</div>
+			)}
 			<button
 				className="rounded bg-yellow-600 dark:bg-yellow-400 px-6 py-2 text-xs font-semibold text-white dark:text-black hover:bg-yellow-700 dark:hover:bg-yellow-300 justify-center transition mx-auto block"
 				onClick={onBack}

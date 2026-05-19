@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import NutritionDashboardCard from "@/components/MealPrepHelper/NutritionDashboardCard";
 
 interface Ingredient {
 	name: string;
@@ -10,9 +11,13 @@ interface InventoryScreenProps {
 	ingredients: Ingredient[];
 	setIngredients: React.Dispatch<React.SetStateAction<Ingredient[]>>;
 	ingredientDB: any[];
+	calorieGoal: number;
+	macros: { protein: number; fat: number; carbs: number };
+	days: number;
 	onContinue: () => void;
+	onBack: () => void;
 }
-export default function InventoryScreen({ ingredients, setIngredients, ingredientDB, onContinue }: InventoryScreenProps) {
+export default function InventoryScreen({ ingredients, setIngredients, ingredientDB, calorieGoal, macros, days, onContinue, onBack }: InventoryScreenProps) {
 	const [showModal, setShowModal] = useState(false);
 	const [search, setSearch] = useState("");
 	const [selectedIngredient, setSelectedIngredient] = useState<string | null>(null);
@@ -62,6 +67,19 @@ export default function InventoryScreen({ ingredients, setIngredients, ingredien
         setUnit("");
         setAmount("");
     }
+
+	const totals = ingredients.reduce((acc, ing) => {
+		const db = ingredientDB.find((i: any) => i.name === ing.name);
+		const conv = db?.unitConversions.find((u: any) => u.unit === ing.unit);
+		const grams = conv ? parseFloat(ing.amount) * conv.grams : 0;
+		if (db && conv) {
+			acc.kcal += grams * db.kcalPer1g;
+			acc.protein += grams * db.proteinPer1g;
+			acc.fat += grams * db.fatPer1g;
+			acc.carbs += grams * db.carbsPer1g;
+		}
+		return acc;
+	}, { kcal: 0, protein: 0, fat: 0, carbs: 0 });
 
 	return (
 		<div>
@@ -291,19 +309,46 @@ export default function InventoryScreen({ ingredients, setIngredients, ingredien
 							);
 							})}
 						</tbody>
+						{ingredients.length > 0 && (
+							<tfoot>
+								<tr className="font-bold text-neutral-900 dark:text-white border-t-2 border-neutral-300 dark:border-neutral-600">
+									<td className="px-2 py-2 text-yellow-700 dark:text-yellow-400">Total</td>
+									<td className="px-2 py-2"></td>
+									<td className="px-2 py-2">{totals.kcal.toFixed(0)}</td>
+									<td className="px-2 py-2 text-center">{totals.protein.toFixed(1)}/{totals.fat.toFixed(1)}/{totals.carbs.toFixed(1)}</td>
+									<td></td>
+								</tr>
+							</tfoot>
+						)}
 					</table>
+					<div className="text-right">
+						<button
+							type="button"
+							className="rounded bg-yellow-600 dark:bg-yellow-400 px-4 py-2 text-sm font-semibold text-white dark:text-black shadow hover:bg-yellow-700 dark:hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
+							onClick={handleAdd}
+						>
+							+ Add Ingredient
+						</button>
+					</div>
 				</div>
 			</section>
-			<section className="text-center">
-				<div className="text-right">
-					<button
-						type="button"
-						className="rounded bg-yellow-600 dark:bg-yellow-400 px-4 py-2 text-sm font-semibold text-white dark:text-black shadow hover:bg-yellow-700 dark:hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
-						onClick={handleAdd}
-					>
-						+ Add Ingredient
-					</button>
+			{ingredients.length > 0 && (
+				<div className="mb-4">
+					<NutritionDashboardCard
+						goalKcal={calorieGoal}
+						intakeKcal={totals.kcal / days}
+						burnedKcal={0}
+						showOverflow={true}
+						showMenuDots={false}
+						nutrients={{
+							protein: { currentG: totals.protein / days, targetG: (macros.protein / 100) * calorieGoal / 4 },
+							fat: { currentG: totals.fat / days, targetG: (macros.fat / 100) * calorieGoal / 9 },
+							carbs: { currentG: totals.carbs / days, targetG: (macros.carbs / 100) * calorieGoal / 4 },
+						}}
+					/>
 				</div>
+			)}
+			<section className="text-center">
                 {ingredients.length > 0 && (
                     <div className="mt-10">
                         <button
@@ -312,10 +357,17 @@ export default function InventoryScreen({ ingredients, setIngredients, ingredien
                             onClick={onContinue}
                             disabled={ingredients.length === 0}
                         >
-                            Get Nutritions
+                            Go to Summary
                         </button>
                     </div>
                 )}
+				<button
+					type="button"
+					className="my-2 text-sm text-neutral-500 dark:text-neutral-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition underline underline-offset-2"
+					onClick={onBack}
+				>
+					← Back to calories & macros
+				</button>
 			</section>
 		</div>
 	);
