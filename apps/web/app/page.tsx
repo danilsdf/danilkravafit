@@ -1,12 +1,23 @@
+import Image from "next/image";
+import Link from "next/link";
 import MainFooter from "@/components/footer/MainFooter";
 import HomeHeader from "@/components/headers/HomeHeader";
-import Image from "next/image";
+import HeroDivider from "@/components/HeroDivider";
 
 const records = [
   { title: "5K", time: "18:41", pace: "3:50 /km", date: "Apr 2026" },
   { title: "10K", time: "39:09", pace: "3:50 /km", date: "Apr 2026" },
   { title: "Half Marathon", time: "1:33:07", pace: "4:25 /km", date: "Nov 2025" },
   { title: "Marathon", time: "3:22:46", pace: "4:46 /km", date: "May 2026" },
+];
+
+const instagram = [
+  { src: "/home/routine.jpg", label: "Routines" },
+  { src: "/home/training-tips.jpg", label: "Training Tips" },
+  { src: "/home/meal-prep-post.jpg", label: "Meal Prep" },
+  { src: "/home/progress.jpg", label: "Progress" },
+  { src: "/home/running.jpg", label: "Running" },
+  { src: "/home/run-stats.jpg", label: "Run Stats" },
 ];
 
 const pillars = [
@@ -31,115 +42,170 @@ export default function HomePage() {
   return (
     <>
       <HomeHeader showTraining={true} />
-      <main className="min-h-screen bg-neutral-950 text-white">
+        <main className="min-h-screen bg-black text-white">
         {/* HERO */}
         <section className="relative overflow-hidden border-b border-white/10">
-          <div className="relative min-h-[720px] md:min-h-[760px] lg:min-h-[820px] wide:min-h-0 wide:h-[820px] wide:max-h-[820px] max-w-[1450px] mx-auto">
-            <Image
-              src="/home-page/home-background.png"
-              alt="Danil Krava fitness homepage hero"
-              fill
-              priority
-              className="object-cover object-[68%_center] md:object-[72%_center] lg:object-center wide:object-contain wide:object-right"
-            />
+          <div className="flex flex-col lg:relative lg:min-h-screen">
+            {/* TRAINING */}
+            <div className="hero-training relative min-h-[520px] overflow-hidden lg:absolute lg:inset-0">
+              <Image
+                src="/home/gym-training.png"
+                alt="Training background"
+                fill
+                priority
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-black/35" />
 
-            <div className="relative z-10 flex min-h-[720px] items-end px-5 pb-10 pt-28 md:min-h-[760px] md:items-center md:px-10 md:pb-0 lg:min-h-[820px] lg:px-24 wide:min-h-0 wide:h-[820px]">
-              <div className="max-w-xl">
-                <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.22em] text-white/70 md:text-xs">
-                  Hybrid Athlete. Discipline. Systems.
+              <div className="relative z-10 flex h-full min-h-[520px] flex-col justify-center px-6 py-24 md:px-12 lg:px-20">
+                <p className="mb-4 text-xs font-black uppercase tracking-[0.3em] text-[#d6a936]">
+                  Hybrid Athlete Training
                 </p>
 
-                <h1 className="mb-5 text-4xl font-black leading-[0.95] tracking-tight md:text-6xl lg:text-7xl">
-                  Building the best version of myself
+                <h1 className="max-w-lg text-5xl font-black uppercase leading-[0.9] md:text-7xl">
+                  Train With Structure
                 </h1>
 
-                <p className="mb-7 max-w-md text-sm leading-relaxed text-white/75 md:text-base lg:text-lg">
-                  Balancing the demands of a 9–5 with hybrid training. Run faster, get stronger, and stay consistent — all while navigating the challenges of a busy schedule.
+                <p className="mt-6 max-w-md text-sm leading-relaxed text-white/75 md:text-base">
+                  Running plans, strength sessions, race prep and hybrid athlete
+                  systems built around real life.
                 </p>
 
-                <div className="mb-8 grid grid-cols-2 border-y border-white/15 py-5">
-                  <div className="pr-5">
-                    <p className="mb-1 text-[10px] font-bold uppercase tracking-widest text-white/45">
+                <div className="mt-8 grid max-w-md grid-cols-2 border-y border-white/15 py-5">
+                  <div>
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#d6a936]">
                       Current Goal
                     </p>
-                    <p className="text-base font-bold md:text-lg">
-                      Spartan Beast Prep
-                    </p>
+                    <p className="mt-1 font-bold">Spartan Beast Prep</p>
                   </div>
 
                   <div className="border-l border-white/20 pl-5">
-                    <p className="mb-1 text-[10px] font-bold uppercase tracking-widest text-white/45">
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#d6a936]">
                       Next Event
                     </p>
-                    <p className="text-base font-bold md:text-lg">
-                      Spartan Beast Race
-                    </p>
-                    <p className="mt-1 text-xs text-white/55">June 13, 2026</p>
+                    <p className="mt-1 font-bold">Spartan Beast</p>
+                    <p className="text-xs text-white/55">June 13, 2026</p>
                   </div>
                 </div>
 
-                <a
+                <Link
                   href="/training"
-                  className="inline-flex w-full items-center justify-center gap-3 bg-white px-6 py-4 text-xs font-black uppercase tracking-wide text-black transition hover:bg-white/85 sm:w-auto"
+                  className="mt-8 inline-flex w-fit items-center gap-3 bg-white px-6 py-4 text-xs font-black uppercase tracking-wide text-black transition hover:bg-white/85"
                 >
-                  View Training Program
-                  <span className="text-lg leading-none">→</span>
-                </a>
+                  View Training →
+                </Link>
               </div>
             </div>
+
+            {/* MEAL PREP */}
+            <div className="hero-meal-prep relative min-h-[520px] overflow-hidden lg:absolute lg:inset-0">
+              <Image
+                src="/home/gym-meal-prep.png"
+                alt="Meal prep background"
+                fill
+                priority
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-black/45" />
+
+              <div className="relative z-10 flex h-full min-h-[520px] flex-col justify-center px-6 py-24 md:px-12 lg:items-end lg:px-20 lg:text-right">
+                <p className="mb-4 text-xs font-black uppercase tracking-[0.3em] text-[#d6a936]">
+                  Performance Nutrition
+                </p>
+
+                <h2 className="max-w-lg text-5xl font-black uppercase leading-[0.9] md:text-7xl">
+                  Fuel With Systems
+                </h2>
+
+                <p className="mt-6 max-w-md text-sm leading-relaxed text-white/75 md:text-base">
+                  High-protein meal prep built for performance, recovery and busy
+                  schedules.
+                </p>
+
+                <div className="mt-8 grid max-w-md grid-cols-2 border-y border-white/15 py-5 lg:text-left">
+                  <div>
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#d6a936]">
+                      Meal Prep Style
+                    </p>
+                    <p className="mt-1 font-bold">High Protein</p>
+                  </div>
+
+                  <div className="border-l border-white/20 pl-5">
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#d6a936]">
+                      Main Focus
+                    </p>
+                    <p className="mt-1 font-bold">Performance</p>
+                    <p className="text-xs text-white/55">Fuel & recovery</p>
+                  </div>
+                </div>
+
+                <Link
+                  href="/meal-prep-plans"
+                  className="mt-8 inline-flex w-fit items-center gap-3 border border-white/25 bg-black/40 px-6 py-4 text-xs font-black uppercase tracking-wide transition hover:border-[#d6a936]/60"
+                >
+                  View Meal Preps →
+                </Link>
+              </div>
+            </div>
+
+            {/* Yellow diagonal divider — angle computed from clip-path values */}
+            <HeroDivider topX={0.47} bottomX={0.53} />
           </div>
         </section>
 
-        {/* PERSONAL RECORDS */}
-        <section className="px-5 py-14 md:px-10 md:py-20 lg:px-24">
+
+        {/* RECORDS */}
+        <section className="px-5 py-16 md:px-10 lg:px-24">
           <div className="mb-10 text-center">
-            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.3em] text-white/45">
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-white/40">
               Personal Records
             </p>
-            <h2 className="text-3xl font-black tracking-tight md:text-5xl">
-              Proof of Progress
-            </h2>
+            <h2 className="text-3xl font-black md:text-5xl">Proof of Progress</h2>
           </div>
 
-          <div className="grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-4">
-            {records.map((record) => (
+          <div className="mx-auto grid max-w-7xl grid-cols-2 gap-4 lg:grid-cols-4">
+            {records.map((r) => (
               <article
-                key={record.title}
-                className="border border-white/10 bg-white/[0.03] px-4 py-6 text-center backdrop-blur transition hover:border-white/25 hover:bg-white/[0.06] md:px-6 md:py-8"
+                key={r.title}
+                className="rounded-xl border border-white/10 bg-white/[0.03] p-6 text-center transition hover:border-[#d6a936]/50"
               >
-                <div className="mb-4 text-xl text-white/45">🏃</div>
-
-                <p className="mb-4 text-[11px] font-black uppercase tracking-widest text-white/75 md:text-xs">
-                  {record.title}
+                <p className="text-[#d6a936]">🏃</p>
+                <p className="mt-4 text-xs font-black uppercase tracking-widest text-white/70">
+                  {r.title}
                 </p>
-
-                <p className="mb-5 text-3xl font-black tracking-tight md:text-5xl">
-                  {record.time}
-                </p>
-
-                <div className="mx-auto mb-4 h-px w-20 bg-white/20 md:w-28" />
-
-                <p className="text-[10px] font-bold uppercase tracking-wide text-white/65 md:text-xs">
-                  Pace {record.pace}
-                </p>
-
-                <p className="mt-2 text-[10px] uppercase tracking-widest text-white/40">
-                  {record.date}
+                <p className="mt-4 text-4xl font-black">{r.time}</p>
+                <div className="mx-auto my-4 h-px w-20 bg-white/20" />
+                <p className="text-xs uppercase text-white/60">Pace {r.pace}</p>
+                <p className="mt-1 text-[10px] uppercase tracking-widest text-white/35">
+                  {r.date}
                 </p>
               </article>
             ))}
           </div>
+        </section>
 
-          <div className="mt-10 flex justify-center">
-            <a
-              href="https://www.strava.com/athletes/66921238"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 border border-white/20 px-6 py-4 text-xs font-black uppercase tracking-wide text-white transition hover:border-white/50 hover:bg-white/[0.06]"
-            >
-              See on Strava
-              <span className="text-lg leading-none">→</span>
-            </a>
+        {/* TRAINING + MEAL PREP CARDS */}
+        <section className="px-5 pb-16 md:px-10 lg:px-24">
+          <div className="mx-auto grid max-w-7xl gap-5 lg:grid-cols-2">
+            <FeatureCard
+              href="/training"
+              image="/home/training-programs.png"
+              label="Training"
+              title="Training Programs"
+              text="Structured plans built for hybrid athletes. Strength, running, and recovery — all in one place."
+              items={["Weekly training plans", "Run workouts & long runs", "Strength programs", "Progress tracking"]}
+              cta="View Training"
+            />
+
+            <FeatureCard
+              href="/meal-prep-plans"
+              image="/home/meal-preps.png"
+              label="Nutrition"
+              title="Meal Preps"
+              text="Simple, high-protein meals to fuel performance and save time."
+              items={["Calories & macro tracking", "High-protein recipes", "Meal prep guides", "Grocery lists"]}
+              cta="View Meal Preps"
+            />
           </div>
         </section>
 
@@ -215,7 +281,63 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-      <MainFooter />
+    <MainFooter />
     </>
+  );
+}
+
+function FeatureCard({
+  href,
+  image,
+  label,
+  title,
+  text,
+  items,
+  cta,
+}: {
+  href: string;
+  image: string;
+  label: string;
+  title: string;
+  text: string;
+  items: string[];
+  cta: string;
+}) {
+  return (
+    <Link
+      href={href}
+      className="group relative min-h-[360px] overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-8 transition hover:border-[#d6a936]/50"
+    >
+      <Image
+        src={image}
+        alt={title}
+        fill
+        className="object-cover opacity-35 transition duration-500 group-hover:scale-105"
+      />
+      <div className="absolute inset-0" />
+
+      <div className="relative z-10">
+        <p className="mb-3 text-xs font-black uppercase tracking-[0.3em] text-[#d6a936]">
+          {label}
+        </p>
+        <h3 className="text-3xl font-black uppercase md:text-4xl">{title}</h3>
+        <p className="mt-4 max-w-md text-sm leading-relaxed text-white/65">
+          {text}
+        </p>
+
+        <div className="mt-8 space-y-3">
+          {items.map((item) => (
+            <p key={item} className="text-sm text-white/75">
+              <span className="mr-2 text-[#d6a936]">✓</span>
+              {item}
+            </p>
+          ))}
+        </div>
+
+        <span className="mt-8 inline-flex items-center gap-3 border border-white/20 px-5 py-3 text-xs font-black uppercase tracking-widest">
+          {cta} →
+        </span>
+      </div>
+    </Link>
   );
 }
