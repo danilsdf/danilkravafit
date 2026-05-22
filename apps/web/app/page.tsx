@@ -3,6 +3,7 @@ import Link from "next/link";
 import MainFooter from "@/components/footer/MainFooter";
 import HomeHeader from "@/components/headers/HomeHeader";
 import HeroDivider from "@/components/HeroDivider";
+import RaceCountdown from "@/components/RaceCountdown";
 
 const records = [
   { title: "5K", time: "18:41", pace: "3:50 /km", date: "Apr 2026" },
@@ -47,13 +48,13 @@ export default function HomePage() {
         <section className="relative overflow-hidden border-b border-white/10">
           <div className="flex flex-col lg:relative lg:min-h-screen">
             {/* TRAINING */}
-            <div className="hero-training relative min-h-[520px] overflow-hidden lg:absolute lg:inset-0">
+            <div className="hero-training relative min-h-[520px] overflow-hidden lg:absolute lg:inset-y-0 lg:left-0 lg:right-[45%]">
               <Image
                 src="/home/home-gym-training.png"
                 alt="Training background"
                 fill
                 priority
-                className="object-cover 2xl:object-[200%_center] 3xl:object-[500%_center]"
+                className="object-cover"
               />
               <div className="absolute inset-0 bg-black/35" />
 
@@ -85,6 +86,7 @@ export default function HomePage() {
                     </p>
                     <p className="mt-1 font-bold">Spartan Beast</p>
                     <p className="text-xs text-white/55">June 13, 2026</p>
+                    <RaceCountdown targetDate="2026-06-13T08:00:00" />
                   </div>
                 </div>
 
