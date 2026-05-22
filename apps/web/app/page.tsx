@@ -49,11 +49,11 @@ export default function HomePage() {
             {/* TRAINING */}
             <div className="hero-training relative min-h-[520px] overflow-hidden lg:absolute lg:inset-0">
               <Image
-                src="/home/gym-training.png"
+                src="/home/home-gym-training.png"
                 alt="Training background"
                 fill
                 priority
-                className="object-cover"
+                className="object-cover 2xl:object-[200%_center] 3xl:object-[500%_center]"
               />
               <div className="absolute inset-0 bg-black/35" />
 

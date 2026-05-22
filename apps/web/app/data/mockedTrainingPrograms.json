@@ -548,8 +548,7 @@
     "description": "5-week Spartan Beast preparation program. Combines trail running, hill repeats, heavy strength & carries, and full OCR simulation circuits. Built to finish race day strong.",
     "duration": "5 weeks",
     "totalKm": "~200 km",
-    "startDate": "2026-03-09",
-    "endDate": "2026-05-03",
+    "endDate": "2026-06-13",
     "targetRace": "June 13, 2026",
     "goal": "Finish",
     "tags": ["running"],
@@ -560,13 +559,13 @@
         "subtitle": "Foundation",
         "volume": "~35 km",
         "days": [
-          { "day": "Mon", "iso": "2026-08-03", "dateLabel": "Aug 3",  "training": "6–8 km easy run + 15 min incline walk + mobility & sauna",                                                    "run": "7"  },
-          { "day": "Tue", "iso": "2026-08-04", "dateLabel": "Aug 4",  "training": "Strength + Carries: trap bar DL 4×5, Bulgarian split squat 3×10, pull-ups 4 sets, DB press 3×10, farmer carries + dead hangs", "run": "—"  },
-          { "day": "Wed", "iso": "2026-08-05", "dateLabel": "Aug 5",  "training": "Hill Intro: 8 × 60 sec uphill, walk/jog down, 50 walking lunges",                                            "run": "—"  },
-          { "day": "Thu", "iso": "2026-08-06", "dateLabel": "Aug 6",  "training": "Spartan Circuit 4 rounds: 800m run, 15 burpees, 10 pull-ups, 20 box step-ups, 40m carry, dead hangs",        "run": "—"  },
-          { "day": "Fri", "iso": "2026-08-07", "dateLabel": "Aug 7",  "training": "5–6 km recovery run + 20 min incline walk + sauna",                                                          "run": "6"  },
-          { "day": "Sat", "iso": "2026-08-08", "dateLabel": "Aug 8",  "training": "45-min HIIT class + optional grip work",                                                                      "run": "—"  },
-          { "day": "Sun", "iso": "2026-08-09", "dateLabel": "Aug 9",  "training": "Long run 14–16 km easy (trails preferred)",                                                                   "run": "15", "bold": true }
+          { "day": "Mon", "iso": "2026-05-11", "dateLabel": "May 11", "training": "6–8 km easy run + 15 min incline walk + mobility & sauna",                                                    "run": "7"  },
+          { "day": "Tue", "iso": "2026-05-12", "dateLabel": "May 12", "training": "Strength + Carries: trap bar DL 4×5, Bulgarian split squat 3×10, pull-ups 4 sets, DB press 3×10, farmer carries + dead hangs", "run": "—"  },
+          { "day": "Wed", "iso": "2026-05-13", "dateLabel": "May 13", "training": "Hill Intro: 8 × 60 sec uphill, walk/jog down, 50 walking lunges",                                            "run": "—"  },
+          { "day": "Thu", "iso": "2026-05-14", "dateLabel": "May 14", "training": "Spartan Circuit 4 rounds: 800m run, 15 burpees, 10 pull-ups, 20 box step-ups, 40m carry, dead hangs",        "run": "—"  },
+          { "day": "Fri", "iso": "2026-05-15", "dateLabel": "May 15", "training": "5–6 km recovery run + 20 min incline walk + sauna",                                                          "run": "6"  },
+          { "day": "Sat", "iso": "2026-05-16", "dateLabel": "May 16", "training": "45-min HIIT class + optional grip work",                                                                      "run": "—"  },
+          { "day": "Sun", "iso": "2026-05-17", "dateLabel": "May 17", "training": "Long run 14–16 km easy (trails preferred)",                                                                   "run": "15", "bold": true }
         ]
       },
       {
@@ -575,13 +574,13 @@
         "subtitle": "Build",
         "volume": "~40 km",
         "days": [
-          { "day": "Mon", "iso": "2026-08-10", "dateLabel": "Aug 10", "training": "6–8 km easy aerobic + mobility & sauna",                                                                      "run": "7"  },
-          { "day": "Tue", "iso": "2026-08-11", "dateLabel": "Aug 11", "training": "Strength + Carries: deadlift, walking lunges, step-ups, pull-ups, heavy carries, towel grip work",            "run": "—"  },
-          { "day": "Wed", "iso": "2026-08-12", "dateLabel": "Aug 12", "training": "Hill Session: 10 × 90 sec uphill + controlled downhill",                                                      "run": "—"  },
-          { "day": "Thu", "iso": "2026-08-13", "dateLabel": "Aug 13", "training": "Spartan Conditioning 5 rounds: 1 km run, 15 burpees, 15 KB swings, 10 pull-ups, crawl + carry",              "run": "—"  },
-          { "day": "Fri", "iso": "2026-08-14", "dateLabel": "Aug 14", "training": "6 km recovery run + mobility & sauna",                                                                        "run": "6"  },
-          { "day": "Sat", "iso": "2026-08-15", "dateLabel": "Aug 15", "training": "45-min HIIT class",                                                                                           "run": "—"  },
-          { "day": "Sun", "iso": "2026-08-16", "dateLabel": "Aug 16", "training": "Hamilton Elevation Run #1 — 16–18 km trails with climbing",                                                   "run": "17", "bold": true }
+          { "day": "Mon", "iso": "2026-05-18", "dateLabel": "May 18", "training": "6–8 km easy aerobic + mobility & sauna",                                                                      "run": "7"  },
+          { "day": "Tue", "iso": "2026-05-19", "dateLabel": "May 19", "training": "Strength + Carries: deadlift, walking lunges, step-ups, pull-ups, heavy carries, towel grip work",            "run": "—"  },
+          { "day": "Wed", "iso": "2026-05-20", "dateLabel": "May 20", "training": "Hill Session: 10 × 90 sec uphill + controlled downhill",                                                      "run": "—"  },
+          { "day": "Thu", "iso": "2026-05-21", "dateLabel": "May 21", "training": "Spartan Conditioning 5 rounds: 1 km run, 15 burpees, 15 KB swings, 10 pull-ups, crawl + carry",              "run": "—"  },
+          { "day": "Fri", "iso": "2026-05-22", "dateLabel": "May 22", "training": "6 km recovery run + mobility & sauna",                                                                        "run": "6"  },
+          { "day": "Sat", "iso": "2026-05-23", "dateLabel": "May 23", "training": "45-min HIIT class",                                                                                           "run": "—"  },
+          { "day": "Sun", "iso": "2026-05-24", "dateLabel": "May 24", "training": "Hamilton Elevation Run #1 — 16–18 km trails with climbing",                                                   "run": "17", "bold": true }
         ]
       },
       {
@@ -590,13 +589,13 @@
         "subtitle": "Peak",
         "volume": "~45 km",
         "days": [
-          { "day": "Mon", "iso": "2026-08-17", "dateLabel": "Aug 17", "training": "6–8 km easy run + mobility",                                                                                  "run": "7"  },
-          { "day": "Tue", "iso": "2026-08-18", "dateLabel": "Aug 18", "training": "Heavy Spartan Strength: DL 5×5, step-ups 4×12, weighted pull-ups, heavy carries, core work",                 "run": "—"  },
-          { "day": "Wed", "iso": "2026-08-19", "dateLabel": "Aug 19", "training": "Long Hill Repeats: 5 × 4 min uphill + jog down recovery",                                                     "run": "—"  },
-          { "day": "Thu", "iso": "2026-08-20", "dateLabel": "Aug 20", "training": "Beast Simulation 6 rounds: 1 km run, 20 burpees, pull-ups, carries, lunges, dead hangs, crawl",              "run": "—"  },
-          { "day": "Fri", "iso": "2026-08-21", "dateLabel": "Aug 21", "training": "5–6 km recovery run + sauna",                                                                                 "run": "6"  },
-          { "day": "Sat", "iso": "2026-08-22", "dateLabel": "Aug 22", "training": "HIIT class — moderate intensity",                                                                             "run": "—"  },
-          { "day": "Sun", "iso": "2026-08-23", "dateLabel": "Aug 23", "training": "18–21 km trail run — every 4 km: 20 lunges + 10 burpees",                                                    "run": "20", "bold": true }
+          { "day": "Mon", "iso": "2026-05-25", "dateLabel": "May 25", "training": "6–8 km easy run + mobility",                                                                                  "run": "7"  },
+          { "day": "Tue", "iso": "2026-05-26", "dateLabel": "May 26", "training": "Heavy Spartan Strength: DL 5×5, step-ups 4×12, weighted pull-ups, heavy carries, core work",                 "run": "—"  },
+          { "day": "Wed", "iso": "2026-05-27", "dateLabel": "May 27", "training": "Long Hill Repeats: 5 × 4 min uphill + jog down recovery",                                                     "run": "—"  },
+          { "day": "Thu", "iso": "2026-05-28", "dateLabel": "May 28", "training": "Beast Simulation 6 rounds: 1 km run, 20 burpees, pull-ups, carries, lunges, dead hangs, crawl",              "run": "—"  },
+          { "day": "Fri", "iso": "2026-05-29", "dateLabel": "May 29", "training": "5–6 km recovery run + sauna",                                                                                 "run": "6"  },
+          { "day": "Sat", "iso": "2026-05-30", "dateLabel": "May 30", "training": "HIIT class — moderate intensity",                                                                             "run": "—"  },
+          { "day": "Sun", "iso": "2026-05-31", "dateLabel": "May 31", "training": "18–21 km trail run — every 4 km: 20 lunges + 10 burpees",                                                    "run": "20", "bold": true }
         ]
       },
       {
@@ -605,13 +604,13 @@
         "subtitle": "Back-Off",
         "volume": "~35 km",
         "days": [
-          { "day": "Mon", "iso": "2026-08-24", "dateLabel": "Aug 24", "training": "6 km easy run + mobility",                                                                                    "run": "6"  },
-          { "day": "Tue", "iso": "2026-08-25", "dateLabel": "Aug 25", "training": "Moderate Strength: reduced volume, focus carries + pull-ups",                                                  "run": "—"  },
-          { "day": "Wed", "iso": "2026-08-26", "dateLabel": "Aug 26", "training": "Downhill Durability: 6 × 2 min uphill + faster downhill return",                                              "run": "—"  },
-          { "day": "Thu", "iso": "2026-08-27", "dateLabel": "Aug 27", "training": "Final Spartan Simulation 4–5 rounds: run + burpees + carries + grip",                                        "run": "—"  },
-          { "day": "Fri", "iso": "2026-08-28", "dateLabel": "Aug 28", "training": "Easy 5 km run + sauna",                                                                                       "run": "5"  },
-          { "day": "Sat", "iso": "2026-08-29", "dateLabel": "Aug 29", "training": "45-min HIIT class — light intensity",                                                                         "run": "—"  },
-          { "day": "Sun", "iso": "2026-08-30", "dateLabel": "Aug 30", "training": "Hamilton Elevation Run #2 — 14–16 km controlled trail run",                                                   "run": "15", "bold": true }
+          { "day": "Mon", "iso": "2026-06-01", "dateLabel": "Jun 1",  "training": "6 km easy run + mobility",                                                                                    "run": "6"  },
+          { "day": "Tue", "iso": "2026-06-02", "dateLabel": "Jun 2",  "training": "Moderate Strength: reduced volume, focus carries + pull-ups",                                                  "run": "—"  },
+          { "day": "Wed", "iso": "2026-06-03", "dateLabel": "Jun 3",  "training": "Downhill Durability: 6 × 2 min uphill + faster downhill return",                                              "run": "—"  },
+          { "day": "Thu", "iso": "2026-06-04", "dateLabel": "Jun 4",  "training": "Final Spartan Simulation 4–5 rounds: run + burpees + carries + grip",                                        "run": "—"  },
+          { "day": "Fri", "iso": "2026-06-05", "dateLabel": "Jun 5",  "training": "Easy 5 km run + sauna",                                                                                       "run": "5"  },
+          { "day": "Sat", "iso": "2026-06-06", "dateLabel": "Jun 6",  "training": "45-min HIIT class — light intensity",                                                                         "run": "—"  },
+          { "day": "Sun", "iso": "2026-06-07", "dateLabel": "Jun 7",  "training": "Hamilton Elevation Run #2 — 14–16 km controlled trail run",                                                   "run": "15", "bold": true }
         ]
       },
       {
@@ -620,13 +619,12 @@
         "subtitle": "Taper",
         "volume": "Race week",
         "days": [
-          { "day": "Mon", "iso": "2026-08-31", "dateLabel": "Aug 31", "training": "6 km easy run + mobility & sauna",                                                                            "run": "6"  },
-          { "day": "Tue", "iso": "2026-09-01", "dateLabel": "Sep 1",  "training": "Light full-body strength — no soreness",                                                                      "run": "—"  },
-          { "day": "Wed", "iso": "2026-09-02", "dateLabel": "Sep 2",  "training": "4 × 60 sec uphill — easy effort",                                                                             "run": "—"  },
-          { "day": "Thu", "iso": "2026-09-03", "dateLabel": "Sep 3",  "training": "Easy aerobic run + mobility",                                                                                  "run": "—"  },
-          { "day": "Fri", "iso": "2026-09-04", "dateLabel": "Sep 4",  "training": "OFF or light walk",                                                                                           "run": "—"  },
-          { "day": "Sat", "iso": "2026-09-05", "dateLabel": "Sep 5",  "training": "20–30 min shakeout + grip activation",                                                                        "run": "—"  },
-          { "day": "Sun", "iso": "2026-09-06", "dateLabel": "Sep 6",  "training": "RACE DAY — Spartan Beast",                                                                                    "run": "—",  "bold": true }
+          { "day": "Mon", "iso": "2026-06-08", "dateLabel": "Jun 8",  "training": "6 km easy run + mobility & sauna",                                                                            "run": "6"  },
+          { "day": "Tue", "iso": "2026-06-09", "dateLabel": "Jun 9",  "training": "Light full-body strength — no soreness",                                                                      "run": "—"  },
+          { "day": "Wed", "iso": "2026-06-10", "dateLabel": "Jun 10", "training": "4 × 60 sec uphill — easy effort",                                                                             "run": "—"  },
+          { "day": "Thu", "iso": "2026-06-11", "dateLabel": "Jun 11", "training": "Easy aerobic run + mobility",                                                                                  "run": "—"  },
+          { "day": "Fri", "iso": "2026-06-12", "dateLabel": "Jun 12", "training": "20–30 min shakeout + grip activation",                                                                        "run": "—"  },
+          { "day": "Sat", "iso": "2026-06-13", "dateLabel": "Jun 13", "training": "RACE DAY — Spartan Beast",                                                                                    "run": "—",  "bold": true }
         ]
       }
     ]
