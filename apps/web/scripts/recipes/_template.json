@@ -1,0 +1,75 @@
+{
+  "title": "Chicken & Rice Bowl",
+  "slug": "chicken-rice-bowl",
+  "description": "High-protein meal-prep bowl with chicken, rice, and vegetables.",
+  "imageUrl": null,
+  "tags": ["high-protein", "meal-prep", "gluten-free"],
+  "servings": 5,
+  "servingUnit": "container",
+  "status": "published",
+  "mealPrep": {
+    "fridgeDays": 5,
+    "freezerDays": 90,
+    "reheatNotes": "Microwave for 2 minutes, stir halfway."
+  },
+  "ingredients": [
+    {
+      "name": "Chicken breast",
+      "quantity": 700,
+      "unit": "g",
+      "grams": 700,
+      "note": "raw weight"
+    },
+    {
+      "name": "White rice",
+      "quantity": 300,
+      "unit": "g",
+      "grams": 300,
+      "note": "dry weight"
+    },
+    {
+      "name": "Olive oil",
+      "quantity": 2,
+      "unit": "tbsp",
+      "grams": 27
+    },
+    {
+      "name": "Salt",
+      "quantity": null,
+      "unit": "to taste"
+    }
+  ],
+  "instructions": [
+    {
+      "section": "Cook the rice",
+      "steps": [
+        "Rinse rice under cold water until clear.",
+        "Cook in a rice cooker with 1:1.5 water ratio."
+      ],
+      "timing": {
+        "activeMin": 5,
+        "minutes": 20
+      }
+    },
+    {
+      "section": "Cook the chicken",
+      "steps": [
+        "Season chicken breasts with salt and pepper.",
+        "Heat olive oil in a skillet over medium-high heat.",
+        "Cook chicken 6–7 min per side until internal temp reaches 75°C.",
+        "Rest 5 min, then slice or dice."
+      ],
+      "timing": {
+        "activeMin": 15,
+        "minutes": 20
+      }
+    },
+    {
+      "section": "Assemble",
+      "steps": [
+        "Divide rice evenly into 5 meal-prep containers.",
+        "Top each with chicken."
+      ]
+    }
+  ]
+}

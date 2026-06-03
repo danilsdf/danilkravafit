@@ -100,7 +100,7 @@ export default function RecipeCard({ recipe }: Readonly<{ recipe: RecipeRecord }
             text-[14px] font-semibold text-blue-700
             shadow-sm ring-1 ring-blue-200
             dark:bg-blue-500/20 dark:text-white dark:ring-white/10
-            transition
+            transition text-nowrap
             hover:bg-blue-500 hover:text-white
           "
           type="button"

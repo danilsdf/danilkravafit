@@ -1,0 +1,97 @@
+{
+  "title": "Ground Beef & Mushroom Skillet",
+  "slug": "ground-beef-mushroom-skillet",
+  "description": "Extra lean ground beef cooked with mushrooms, bell pepper, and tomatoes. High-protein, simple meal-prep skillet.",
+  "imageUrl": null,
+  "tags": ["high-protein", "meal-prep", "low-carb"],
+  "servings": 5,
+  "servingUnit": "serving",
+  "status": "published",
+  "mealPrep": {
+    "fridgeDays": 5,
+    "freezerDays": 90,
+    "reheatNotes": "Reheat in a pan over medium heat or microwave for 2 minutes."
+  },
+  "ingredients": [
+    {
+      "name": "Ground beef extra lean",
+      "quantity": 1500,
+      "unit": "g",
+      "grams": 1500,
+      "note": "raw weight"
+    },
+    {
+      "name": "Mushrooms",
+      "quantity": 750,
+      "unit": "g",
+      "grams": 750,
+      "note": "raw"
+    },
+    {
+      "name": "Bell pepper",
+      "quantity": 500,
+      "unit": "g",
+      "grams": 500,
+      "note": "raw"
+    },
+    {
+      "name": "Cherry tomatoes",
+      "quantity": 400,
+      "unit": "g",
+      "grams": 400,
+      "note": "raw"
+    },
+    {
+      "name": "Fresh parsley",
+      "quantity": 100,
+      "unit": "g",
+      "grams": 100,
+      "note": "fresh"
+    },
+    {
+      "name": "Salt",
+      "quantity": null,
+      "unit": "to taste"
+    },
+    {
+      "name": "Black pepper",
+      "quantity": null,
+      "unit": "to taste"
+    }
+  ],
+  "instructions": [
+    {
+      "section": "Cook the beef",
+      "steps": [
+        "Heat a pan over medium-high heat.",
+        "Add ground beef in a single layer.",
+        "Season lightly with salt and black pepper.",
+        "Cook for 6–8 minutes, breaking the beef apart, until no pink remains."
+      ],
+      "timing": {
+        "activeMin": 8,
+        "minutes": 8
+      }
+    },
+    {
+      "section": "Add the vegetables",
+      "steps": [
+        "Lower heat to medium.",
+        "Add tomatoes to the pan and mix.",
+        "Add mushrooms and bell pepper.",
+        "Stir and cook together for 5–7 minutes, until mushrooms release moisture and soften and bell pepper becomes tender but still slightly crisp."
+      ],
+      "timing": {
+        "activeMin": 7,
+        "minutes": 7
+      }
+    },
+    {
+      "section": "Finish",
+      "steps": [
+        "Add chopped parsley and stir.",
+        "Taste and adjust salt and pepper if needed."
+      ]
+    }
+  ]
+}
