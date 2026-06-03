@@ -42,7 +42,7 @@ export default function HomeHeader({showTraining = false}: Readonly<{showTrainin
           {[
             { href: "/", label: "Home" },
             { href: "/about", label: "About" },
-            { href: "/meal-prep-plans", label: "Meal prep" },
+            { href: "/recipes", label: "Recipes" },
             { href: "/tools", label: "Tools" },
             // { href: "/membership", label: "Membership" },
           ].map(({ href, label }) => {
@@ -96,7 +96,7 @@ export default function HomeHeader({showTraining = false}: Readonly<{showTrainin
           {[
             { href: "/", label: "Home" },
             { href: "/about", label: "About" },
-            { href: "/meal-prep-plans", label: "Meal prep" },
+            { href: "/recipes", label: "Recipes" },
             { href: "/tools", label: "Tools" },
             // { href: "/membership", label: "Membership" },
             { href: "/training-programs", label: "Training programs" },

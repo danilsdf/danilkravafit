@@ -1,24 +1,45 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import MainFooter from "@/components/footer/MainFooter";
 import HomeHeader from "@/components/headers/HomeHeader";
 import HeroDivider from "@/components/HeroDivider";
 import RaceCountdown from "@/components/RaceCountdown";
 
-const records = [
-  { title: "5K", time: "18:41", pace: "3:50 /km", date: "Apr 2026" },
-  { title: "10K", time: "39:09", pace: "3:50 /km", date: "Apr 2026" },
-  { title: "Half Marathon", time: "1:33:07", pace: "4:25 /km", date: "Nov 2025" },
-  { title: "Marathon", time: "3:22:46", pace: "4:46 /km", date: "May 2026" },
-];
+export const metadata: Metadata = {
+  title: "Danil Kravchenko | Hybrid Athlete & Coder",
+  description:
+    "Training programs, meal prep plans, and tools for hybrid athletes. Built by a runner, lifter, and software engineer.",
+  openGraph: {
+    title: "Danil Kravchenko | Hybrid Athlete & Coder",
+    description:
+      "Training programs, meal prep plans, and tools for hybrid athletes.",
+    url: "https://danilkravafit.com",
+    siteName: "DanilKravaFit",
+    images: [
+      {
+        url: "https://danilkravafit.com/home/home-gym-training.png",
+        width: 1200,
+        height: 630,
+        alt: "Danil Kravchenko – Hybrid Athlete",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Danil Kravchenko | Hybrid Athlete & Coder",
+    description:
+      "Training programs, meal prep plans, and tools for hybrid athletes.",
+    images: ["https://danilkravafit.com/home/home-gym-training.png"],
+  },
+};
 
-const instagram = [
-  { src: "/home/routine.jpg", label: "Routines" },
-  { src: "/home/training-tips.jpg", label: "Training Tips" },
-  { src: "/home/meal-prep-post.jpg", label: "Meal Prep" },
-  { src: "/home/progress.jpg", label: "Progress" },
-  { src: "/home/running.jpg", label: "Running" },
-  { src: "/home/run-stats.jpg", label: "Run Stats" },
+const records = [
+  { title: "5K", time: "18:41", pace: "3:50 /km", date: "Apr 2026", icon: "⚡" },
+  { title: "10K", time: "39:09", pace: "3:50 /km", date: "Apr 2026", icon: "🏃" },
+  { title: "Half Marathon", time: "1:33:07", pace: "4:25 /km", date: "Nov 2025", icon: "🥈" },
+  { title: "Marathon", time: "3:22:46", pace: "4:46 /km", date: "May 2026", icon: "🏅" },
 ];
 
 const pillars = [
@@ -39,11 +60,33 @@ const pillars = [
   },
 ];
 
+const instagramPosts = [
+  { href: "https://www.instagram.com/danilkravafit/reel/DT-3n1RifCo/", src: "/home-page/results/routines.jpg", alt: "Routines", label: "Routines" },
+  { href: "https://www.instagram.com/danilkravafit/reel/DUG3iIbCXzv/", src: "/home-page/results/tips.jpg", alt: "Tips", label: "Tips" },
+  { href: "https://www.instagram.com/danilkravafit/reel/DSa9uYSifqg/", src: "/home-page/results/nutritions.jpg", alt: "Nutritions", label: "Nutritions" },
+  { href: "https://www.instagram.com/danilkravafit/reel/DVoV-iuxZrn/", src: "/home-page/results/progress.png", alt: "Progress", label: "Progress" },
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Danil Kravchenko",
+  url: "https://danilkravafit.com",
+  sameAs: ["https://www.instagram.com/danilkravafit/"],
+  jobTitle: "Hybrid Athlete & Software Engineer",
+  description:
+    "Training programs, meal prep plans, and tools for hybrid athletes.",
+};
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HomeHeader showTraining={true} />
-        <main className="min-h-screen bg-black text-white">
+      <main className="min-h-screen bg-black text-white">
         {/* HERO */}
         <section className="relative overflow-hidden border-b border-white/10">
           <div className="flex flex-col lg:relative lg:min-h-screen">
@@ -142,10 +185,10 @@ export default function HomePage() {
                 </div>
 
                 <Link
-                  href="/meal-prep-plans"
+                  href="/recipes"
                   className="mt-8 inline-flex w-fit items-center gap-3 border border-white/25 bg-black/40 px-6 py-4 text-xs font-black uppercase tracking-wide transition hover:border-[#d6a936]/60"
                 >
-                  View Meal Preps →
+                  View Recipes →
                 </Link>
               </div>
             </div>
@@ -154,7 +197,6 @@ export default function HomePage() {
             <HeroDivider topX={0.47} bottomX={0.53} />
           </div>
         </section>
-
 
         {/* RECORDS */}
         <section className="px-5 py-16 md:px-10 lg:px-24">
@@ -171,7 +213,7 @@ export default function HomePage() {
                 key={r.title}
                 className="rounded-xl border border-white/10 bg-white/[0.03] p-6 text-center transition hover:border-[#d6a936]/50"
               >
-                <p className="text-[#d6a936]">🏃</p>
+                <p className="text-2xl text-[#d6a936]">{r.icon}</p>
                 <p className="mt-4 text-xs font-black uppercase tracking-widest text-white/70">
                   {r.title}
                 </p>
@@ -200,13 +242,13 @@ export default function HomePage() {
             />
 
             <FeatureCard
-              href="/meal-prep-plans"
+              href="/recipes"
               image="/home/meal-preps.png"
               label="Nutrition"
-              title="Meal Preps"
+              title="Recipes"
               text="Simple, high-protein meals to fuel performance and save time."
               items={["Calories & macro tracking", "High-protein recipes", "Meal prep guides", "Grocery lists"]}
-              cta="View Meal Preps"
+              cta="View Recipes"
             />
           </div>
         </section>
@@ -223,12 +265,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-5 mb-10">
-            {[
-              { href: "https://www.instagram.com/danilkravafit/reel/DT-3n1RifCo/", src: "/home-page/results/routines.jpg", alt: "Routines", label: "Routines" },
-              { href: "https://www.instagram.com/danilkravafit/reel/DUG3iIbCXzv/", src: "/home-page/results/tips.jpg", alt: "Tips", label: "Tips" },
-              { href: "https://www.instagram.com/danilkravafit/reel/DSa9uYSifqg/", src: "/home-page/results/nutritions.jpg", alt: "Nutritions", label: "Nutritions" },
-              { href: "https://www.instagram.com/danilkravafit/reel/DVoV-iuxZrn/", src: "/home-page/results/progress.png", alt: "Progress", label: "Progress" },
-            ].map((item) => (
+            {instagramPosts.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
@@ -236,10 +273,12 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="relative aspect-square group block border border-white/10 overflow-hidden transition hover:border-white/25"
               >
-                <img
+                <Image
                   src={item.src}
                   alt={item.alt}
-                  className="w-full h-full object-cover transition group-hover:opacity-80"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className="object-cover transition group-hover:opacity-80"
                 />
                 <span className="absolute bottom-2 left-2 bg-black/70 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1">
                   {item.label}
@@ -255,8 +294,7 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 border border-white/20 px-6 py-4 text-xs font-black uppercase tracking-wide text-white transition hover:border-white/50 hover:bg-white/[0.06]"
             >
-              Follow on Instagram
-              <span className="text-lg leading-none">→</span>
+              Follow on Instagram →
             </a>
           </div>
         </section>
@@ -266,8 +304,8 @@ export default function HomePage() {
           <div className="grid gap-7 md:grid-cols-3">
             {pillars.map((pillar) => (
               <article key={pillar.title} className="flex items-center gap-5">
-                <div className="w-12 h-12 md:w-20 md:h-20 opacity-60 flex-shrink-0">
-                  <img src={pillar.icon} alt={pillar.title} className="w-full h-full object-contain" />
+                <div className="relative w-12 h-12 md:w-20 md:h-20 opacity-60 flex-shrink-0">
+                  <Image src={pillar.icon} alt={pillar.title} fill className="object-contain" />
                 </div>
 
                 <div>
@@ -283,7 +321,7 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-    <MainFooter />
+      <MainFooter />
     </>
   );
 }
@@ -296,7 +334,7 @@ function FeatureCard({
   text,
   items,
   cta,
-}: {
+}: Readonly<{
   href: string;
   image: string;
   label: string;
@@ -304,7 +342,7 @@ function FeatureCard({
   text: string;
   items: string[];
   cta: string;
-}) {
+}>) {
   return (
     <Link
       href={href}
@@ -314,9 +352,9 @@ function FeatureCard({
         src={image}
         alt={title}
         fill
+        sizes="(max-width: 1024px) 100vw, 50vw"
         className="object-cover opacity-35 transition duration-500 group-hover:scale-105"
       />
-      <div className="absolute inset-0" />
 
       <div className="relative z-10">
         <p className="mb-3 text-xs font-black uppercase tracking-[0.3em] text-[#d6a936]">

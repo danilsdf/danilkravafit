@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Meal Prep Plans | Hybrid Athlete Hub",
+  title: "Recipes | Hybrid Athlete Hub",
   description: "Discover meal prep, hybrid athlete recipes, and practical nutrition for busy people by Danil Kravchenko.",
   openGraph: {
-    title: "Meal Prep Plans | Hybrid Athlete Hub",
+    title: "Recipes | Hybrid Athlete Hub",
     description: "Discover meal prep, hybrid athlete recipes, and practical nutrition for busy people by Danil Kravchenko.",
-    url: "https://danilkrava.fit/meal-prep-plans",
+    url: "https://danilkrava.fit/recipes",
     siteName: "Hybrid Athlete Hub",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Meal Prep Plans | Hybrid Athlete Hub",
+    title: "Recipes | Hybrid Athlete Hub",
     description: "Discover meal prep, hybrid athlete recipes, and practical nutrition for busy people by Danil Kravchenko.",
   },
 };
