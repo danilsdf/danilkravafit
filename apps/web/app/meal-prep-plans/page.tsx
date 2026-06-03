@@ -104,10 +104,10 @@ function MealPrepPlansContent() {
         <div className="mb-8 rounded-2xl border border-emerald-200 dark:border-emerald-800/50 bg-emerald-50 dark:bg-emerald-900/20 p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <p className="font-semibold text-lg text-emerald-900 dark:text-emerald-300">
-              Download my best 10 high protein recipes
+              Download 10 high protein meal-prep-friendly recipes
             </p>
             <p className="text-sm text-emerald-700 dark:text-emerald-400 mt-1">
-              Show your interest — and I&apos;ll keep adding more meal prep plans to the site!
+              Show your interest — and I&apos;ll keep adding more high protein meal-prep-friendly recipes to the site!
             </p>
           </div>
           <button
