@@ -1,0 +1,120 @@
+{
+  "title": "Buckwheat with Shrimps & Fresh Salad",
+  "slug": "buckwheat-shrimps-fresh-salad",
+  "description": "Garlic shrimps served over buckwheat with a fresh salad of lettuce, cherry tomatoes, cucumber, and Greek yogurt dressing.",
+  "imageUrl": null,
+  "tags": ["high-protein", "meal-prep", "seafood"],
+  "servings": 5,
+  "servingUnit": "serving",
+  "status": "published",
+  "mealPrep": {
+    "fridgeDays": 3,
+    "freezerDays": null,
+    "reheatNotes": "Keep salad separate. Reheat buckwheat and shrimps in a pan or microwave. Add salad fresh before eating."
+  },
+  "ingredients": [
+    {
+      "name": "Shrimps",
+      "quantity": 800,
+      "unit": "g",
+      "grams": 800,
+      "note": "raw weight"
+    },
+    {
+      "name": "Buckwheat",
+      "quantity": 200,
+      "unit": "g",
+      "grams": 200,
+      "note": "dry weight"
+    },
+    {
+      "name": "Green Leaf Lettuce",
+      "quantity": 750,
+      "unit": "g",
+      "grams": 750,
+      "note": "raw"
+    },
+    {
+      "name": "Cherry tomatoes",
+      "quantity": 300,
+      "unit": "g",
+      "grams": 300,
+      "note": "raw"
+    },
+    {
+      "name": "Cucumbers",
+      "quantity": 5,
+      "unit": "piece",
+      "note": "raw"
+    },
+    {
+      "name": "Greek yogurt",
+      "quantity": 400,
+      "unit": "g",
+      "grams": 400
+    },
+    {
+      "name": "Garlic",
+      "quantity": null,
+      "unit": "to taste"
+    },
+    {
+      "name": "Salt",
+      "quantity": null,
+      "unit": "to taste"
+    },
+    {
+      "name": "Black pepper",
+      "quantity": null,
+      "unit": "to taste"
+    }
+  ],
+  "instructions": [
+    {
+      "section": "Cook the buckwheat",
+      "steps": [
+        "Rinse buckwheat under cold water.",
+        "Cook in a pot with 1:2 water ratio over medium heat until all water is absorbed, about 15–20 minutes.",
+        "Season with salt, fluff with a fork, and set aside."
+      ],
+      "timing": {
+        "activeMin": 5,
+        "minutes": 20
+      }
+    },
+    {
+      "section": "Cook the shrimps",
+      "steps": [
+        "Heat a pan over medium-high heat with a little oil.",
+        "Add minced garlic and cook for 30 seconds until fragrant.",
+        "Add shrimps, season with salt and black pepper.",
+        "Cook for 2–3 minutes per side until pink and cooked through.",
+        "Remove from heat."
+      ],
+      "timing": {
+        "activeMin": 8,
+        "minutes": 8
+      }
+    },
+    {
+      "section": "Prepare the salad",
+      "steps": [
+        "Chop lettuce, halve cherry tomatoes, and slice cucumber.",
+        "Add cooked shrimps to the salad.",
+        "Mix everything together with Greek yogurt as dressing.",
+        "Season with salt and pepper to taste."
+      ],
+      "timing": {
+        "activeMin": 5,
+        "minutes": 5
+      }
+    },
+    {
+      "section": "Serve",
+      "steps": [
+        "Divide buckwheat into 5 portions.",
+        "Top or serve alongside the shrimp salad."
+      ]
+    }
+  ]
+}

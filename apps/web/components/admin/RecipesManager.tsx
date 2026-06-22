@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback, useRef } from "react";
 import type { RecipeRecord as Recipe, RecipeIngredientLineRecord, RecipeStatus, InstructionBlock } from "@/app/data/models/recipe";
 import type { IngredientRecord } from "@/app/data/models/ingredient";
+import { ImageUpload } from "./ImageUpload";
 
 type FormState = {
   title: string;
@@ -610,11 +611,9 @@ export default function RecipesManager() {
                   className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-2.5 text-sm text-white placeholder:text-white/20 focus:border-white/30 focus:outline-none transition resize-none"
                 />
               </div>
-              <Field
-                label="Image URL"
+              <ImageUpload
                 value={form.imageUrl}
                 onChange={(v) => setField("imageUrl", v)}
-                placeholder="https://…"
               />
               <Field
                 label="Tags"

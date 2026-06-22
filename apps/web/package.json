@@ -19,6 +19,7 @@
     "accept-language": "^3.0.20",
     "ai": "^6.0.168",
     "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.10.0",
     "date-fns": "^4.1.0",
     "google-auth-library": "^10.6.2",
     "jsonwebtoken": "^9.0.3",

@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback } from "react";
 import type { MealPrepPlan, MealPlanRecipeEntry } from "@/app/data/models/meal-prep-plan";
+import { ImageUpload } from "./ImageUpload";
 
 type RecipeOption = { _id: string; title: string };
 
@@ -501,11 +502,9 @@ export default function MealPrepPlansManager() {
                 />
               </div>
 
-              <Field
-                label="Image URL"
+              <ImageUpload
                 value={form.imageUrl}
                 onChange={(v) => setField("imageUrl", v)}
-                placeholder="https://…"
               />
               <Field
                 label="Ingredient Names"

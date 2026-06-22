@@ -1,0 +1,90 @@
+{
+  "title": "Buckwheat with Chicken Breast & Veggies",
+  "slug": "buckwheat-chicken-breast-veggies",
+  "description": "Tender chicken breast cubes roasted with tomatoes and bell pepper, served with buckwheat. Simple and high-protein meal prep.",
+  "imageUrl": null,
+  "tags": ["high-protein", "meal-prep", "gluten-free"],
+  "servings": 5,
+  "servingUnit": "serving",
+  "status": "published",
+  "mealPrep": {
+    "fridgeDays": 5,
+    "freezerDays": 90,
+    "reheatNotes": "Reheat in a pan over medium heat or microwave for 2 minutes."
+  },
+  "ingredients": [
+    {
+      "name": "Chicken breast",
+      "quantity": 1100,
+      "unit": "g",
+      "grams": 1100,
+      "note": "raw weight, cut into cubes"
+    },
+    {
+      "name": "Buckwheat",
+      "quantity": 400,
+      "unit": "g",
+      "grams": 400,
+      "note": "dry weight"
+    },
+    {
+      "name": "Bell pepper",
+      "quantity": 700,
+      "unit": "g",
+      "grams": 700,
+      "note": "raw"
+    },
+    {
+      "name": "Tomatoes",
+      "quantity": 400,
+      "unit": "g",
+      "grams": 400,
+      "note": "raw"
+    },
+    {
+      "name": "Salt",
+      "quantity": null,
+      "unit": "to taste"
+    },
+    {
+      "name": "Black pepper",
+      "quantity": null,
+      "unit": "to taste"
+    }
+  ],
+  "instructions": [
+    {
+      "section": "Cook the buckwheat",
+      "steps": [
+        "Rinse buckwheat under cold water.",
+        "Cook in a pot with 1:2 water ratio over medium heat until all water is absorbed, about 15–20 minutes.",
+        "Season with salt, fluff with a fork, and set aside."
+      ],
+      "timing": {
+        "activeMin": 5,
+        "minutes": 20
+      }
+    },
+    {
+      "section": "Roast the chicken & vegetables",
+      "steps": [
+        "Cut chicken breast into cubes.",
+        "Heat a pan over medium-high heat with a little oil.",
+        "Add chicken cubes, season with salt and black pepper.",
+        "Add tomatoes and bell pepper to the pan.",
+        "Roast together, stirring occasionally, until chicken is cooked through and vegetables are tender but not dry, about 10–12 minutes."
+      ],
+      "timing": {
+        "activeMin": 12,
+        "minutes": 12
+      }
+    },
+    {
+      "section": "Serve",
+      "steps": [
+        "Divide buckwheat evenly into 5 containers.",
+        "Top each with chicken and vegetables."
+      ]
+    }
+  ]
+}

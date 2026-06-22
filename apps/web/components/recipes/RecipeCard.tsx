@@ -1,14 +1,32 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { RecipeRecord } from "@/app/data/models/recipe";
+import SaveToGroupModal from "@/components/MealPrepGroups/SaveToGroupModal";
 
 export default function RecipeCard({ recipe }: Readonly<{ recipe: RecipeRecord }>) {
   const macros = recipe.nutritionTotals?.perServing;
   const tags = recipe.tags ?? [];
   const href = `/recipe/${recipe.slug}`;
+  const [showGroupModal, setShowGroupModal] = useState(false);
+  const [isSaved, setIsSaved] = useState(false);
+
+  useEffect(() => {
+    const slug = recipe.slug;
+    function containsSlug(g: { recipes: { recipeSlug: string }[] }) {
+      return g.recipes?.some((r) => r.recipeSlug === slug);
+    }
+    fetch("/api/user/meal-prep-groups")
+      .then((r) => (r.ok ? r.json() : []))
+      .then((groups: { recipes: { recipeSlug: string }[] }[]) => {
+        if (Array.isArray(groups)) setIsSaved(groups.some(containsSlug));
+      })
+      .catch(() => {});
+  }, [recipe.slug]);
 
   return (
+    <>
     <Link
       href={href}
       className="
@@ -107,7 +125,40 @@ export default function RecipeCard({ recipe }: Readonly<{ recipe: RecipeRecord }
         >
           View Recipe
         </button>
+
+        <button
+          type="button"
+          onClick={(e) => { e.preventDefault(); e.stopPropagation(); setShowGroupModal(true); }}
+          title={isSaved ? "Saved to a group" : "Save to Meal Prep Group"}
+          className={[
+            "flex items-center gap-1.5 w-full justify-center rounded-2xl px-4 py-2 sm:w-auto",
+            "text-[13px] font-semibold transition text-nowrap",
+            isSaved
+              ? "bg-emerald-500/20 text-emerald-400 ring-1 ring-emerald-400/30 dark:bg-emerald-500/15 dark:text-emerald-300 dark:ring-emerald-400/20 cursor-default"
+              : "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200 dark:bg-emerald-500/10 dark:text-emerald-400 dark:ring-emerald-400/20 hover:bg-emerald-500 hover:text-white dark:hover:bg-emerald-500 dark:hover:text-white",
+          ].join(" ")}
+        >
+          {isSaved ? (
+            <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          ) : (
+            <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+            </svg>
+          )}
+          {isSaved ? "Saved" : "Save to Group"}
+        </button>
       </div>
     </Link>
+
+    {showGroupModal && (
+      <SaveToGroupModal
+        recipeSlug={recipe.slug}
+        recipeTitle={recipe.title}
+        onClose={() => { setShowGroupModal(false); setIsSaved(true); }}
+      />
+    )}
+    </>
   );
 }

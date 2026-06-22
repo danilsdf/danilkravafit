@@ -8,21 +8,22 @@ import MainFooter from "@/components/footer/MainFooter";
 import ProfileMain, { MembershipBadge } from "./ProfileMain";
 import SavedMealPreps from "./SavedMealPreps";
 import SavedMealPrepSessions from "./SavedMealPrepSessions";
-import SavedRecipes from "./SavedRecipes";
 import TrainingPrograms from "./TrainingPrograms";
-import type { ProfileData, SavedPlanItem, SavedRecipeItem, SavedProgramItem, MealPrepSessionItem } from "./types";
+import MealPrepGroups from "./MealPrepGroups";
+import type { ProfileData, SavedPlanItem, SavedProgramItem, MealPrepSessionItem, MealPrepGroupItem } from "./types";
 
 export default function ProfilePage() {
   const router = useRouter();
   const [profile, setProfile] = useState<ProfileData | null>(null);
   const [loading, setLoading] = useState(true);
   const [savedPlans, setSavedPlans] = useState<SavedPlanItem[]>([]);
-  const [savedRecipes, setSavedRecipes] = useState<SavedRecipeItem[]>([]);
   const [savedPrograms, setSavedPrograms] = useState<SavedProgramItem[]>([]);
   const [savedLoading, setSavedLoading] = useState(true);
   const [mealPrepSessions, setMealPrepSessions] = useState<MealPrepSessionItem[]>([]);
   const [sessionsLoading, setSessionsLoading] = useState(true);
-  const [tab, setTab] = useState<"main" | "plans" | "recipes" | "programs" | "meal-prep-sessions">("main");
+  const [mealPrepGroups, setMealPrepGroups] = useState<MealPrepGroupItem[]>([]);
+  const [groupsLoading, setGroupsLoading] = useState(true);
+  const [tab, setTab] = useState<"main" | "plans" | "programs" | "meal-prep-sessions" | "meal-prep-groups">("main");
 
   useEffect(() => {
     fetch("/api/auth/profile")
@@ -38,11 +39,9 @@ export default function ProfilePage() {
 
     Promise.all([
       fetch("/api/user/saved-plans").then((r) => r.ok ? r.json() : []),
-      fetch("/api/user/saved-recipes").then((r) => r.ok ? r.json() : []),
       fetch("/api/user/saved-programs").then((r) => r.ok ? r.json() : []),
-    ]).then(([plans, recipes, programs]) => {
+    ]).then(([plans, programs]) => {
       setSavedPlans(plans);
-      setSavedRecipes(recipes);
       setSavedPrograms(programs);
     }).catch(() => {}).finally(() => setSavedLoading(false));
 
@@ -51,6 +50,12 @@ export default function ProfilePage() {
       .then((data) => setMealPrepSessions(Array.isArray(data) ? data : []))
       .catch(() => {})
       .finally(() => setSessionsLoading(false));
+
+    fetch("/api/user/meal-prep-groups")
+      .then((r) => r.ok ? r.json() : [])
+      .then((data) => setMealPrepGroups(Array.isArray(data) ? data : []))
+      .catch(() => {})
+      .finally(() => setGroupsLoading(false));
   }, [router]);
 
   if (loading) {
@@ -106,9 +111,11 @@ export default function ProfilePage() {
           <div className="flex gap-1 mb-8 border-b border-white/10">
             {([
               ["main", "Main"],
-              ["plans", "Saved Meal Plans"],
-              ["recipes", "Saved Recipes"],
-              ["programs", "Training Programs"],              ["meal-prep-sessions", "Meal Prep Sessions"],            ] as const).map(([t, label]) => (
+              ["meal-prep-groups", "Meal Prep"],
+              // ["plans", "Saved Meal Plans"],
+              ["programs", "Training Programs"],
+              ["meal-prep-sessions", "Meal Prep Sessions"],
+            ] as const).map(([t, label]) => (
               <button
                 key={t}
                 type="button"
@@ -131,9 +138,6 @@ export default function ProfilePage() {
           {tab === "plans" && (
             <SavedMealPreps loading={savedLoading} items={savedPlans} />
           )}
-          {tab === "recipes" && (
-            <SavedRecipes loading={savedLoading} items={savedRecipes} />
-          )}
           {tab === "programs" && (
             <TrainingPrograms
               loading={savedLoading}
@@ -146,6 +150,14 @@ export default function ProfilePage() {
               loading={sessionsLoading}
               items={mealPrepSessions}
               onDelete={(id) => setMealPrepSessions((prev) => prev.filter((s) => s._id !== id))}
+            />
+          )}
+          {tab === "meal-prep-groups" && (
+            <MealPrepGroups
+              loading={groupsLoading}
+              items={mealPrepGroups}
+              onDelete={(id) => setMealPrepGroups((prev) => prev.filter((g) => g._id !== id))}
+              onUpdate={(updated) => setMealPrepGroups((prev) => prev.map((g) => g._id === updated._id ? updated : g))}
             />
           )}
         </div>

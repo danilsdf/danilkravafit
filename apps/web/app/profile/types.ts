@@ -55,6 +55,36 @@ export type MealPrepSessionItem = {
   updatedAt: string;
 };
 
+export type MealPrepGroupRecipeEntry = {
+  recipeSlug: string;
+  addedAt: string;
+  servings: number;
+  kcalOverride?: number | null;
+  proteinOverride?: number | null;
+  carbsOverride?: number | null;
+  fatOverride?: number | null;
+  recipe: {
+    title: string;
+    slug: string;
+    imageUrl?: string | null;
+    servings: number;
+    servingUnit?: string;
+    nutritionTotals?: {
+      perServing?: { kcal: number | null; protein: number | null; carbs: number | null; fat: number | null };
+    };
+  } | null;
+};
+
+export type MealPrepGroupItem = {
+  _id: string;
+  name: string;
+  days: number;
+  calorieGoal?: number | null;
+  recipes: MealPrepGroupRecipeEntry[];
+  createdAt: string;
+  updatedAt: string;
+};
+
 export type MembershipInfo = {
   tier: "Runner" | "HybridAthlete" | "EliteSupporter";
   status: "active" | "trialing" | "canceled" | "past_due" | "unpaid";
